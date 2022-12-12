@@ -1,0 +1,192 @@
+/* Navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+:root{
+  --clr-primary-1000: #010b13;
+  --clr-primary-900: #100c08;
+  --clr-secondary-500: grey;
+  --clr-secondary-100: #EDB0DD;
+  --clr-secondary-0: #fef4ec;
+}
+
+.highlight {
+  --color: var(--clr-secondary-100);
+  font-family: "Kenia";
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.search-bar:is(:focus, :focus-visible) {
+  outline: 6px double var(--clr-secondary-100);;
+}
+
+.main-navbar {
+  display: grid;
+  align-items: center;
+  gap: 2em;
+  grid-template-columns: 200px auto 200px;
+  position: relative;
+  padding: 0 1em;
+  margin-bottom: 2em;
+
+  color: var(--clr-secondary-0);
+}
+
+.logo {
+  margin: 0;
+  padding-top: 0.5rem;
+  object-fit: scale-down;
+
+  color: var(--clr-secondary-100);
+  font-family: "Kenia";
+  font-size: 2rem;
+
+  text-align: center;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+
+  list-style: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.navbar-list a {
+  display: inline-block;
+  width: 100%;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* .navbar-list :is(li, a) { */
+/*   font-weight: normal; */
+/* transition: font-weight 500ms ease-in-out; */
+/* } */
+.navbar-list :is(li, a):is(:hover, :focus) {
+  outline: none;
+  /* font-weight: 1000; */
+  color: var(--clr-secondary-100);
+  text-decoration: underline;
+}
+
+.navbar-checkbox {
+  display: none;
+}
+
+.search-bar {
+  height: 2rem;
+  width: 100%;
+  background: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.navbar-checkbox-label {
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+  .main-navbar {
+    gap: 1em;
+  }
+
+  .main-navbar {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .navbar-checkbox-label{
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .search-bar {
+    grid-column: 1 / 4;
+    grid-row:3;
+  }
+
+  .navbar-list {
+    max-height: 1000px;
+    transform-origin: top;
+    transition: 
+      max-height 500ms ease-in-out,
+      margin 1s ease-in-out, 
+      padding 1s ease-in-out, 
+      opacity 400ms ease-in;
+
+    grid-column: 1 / 4;
+    grid-row:2;
+  }
+
+  .navbar-checkbox:checked ~ .navbar-list:not(:focus-within) {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .navbar-checkbox-label{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-checkbox-label span,
+  .navbar-checkbox-label span::before,
+  .navbar-checkbox-label span::after {
+      display: block;
+      background: white;
+      height: 3px;
+      width: 2em;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+
+  }
+
+
+  .navbar-checkbox-label span {
+    left: 65%;
+  }
+  .navbar-checkbox ~ .navbar-checkbox-label span::before,
+  .navbar-checkbox ~ .navbar-checkbox-label span::after {
+    right: 50%;
+    transition: right 500ms ease-in-out;
+  }
+
+  .navbar-checkbox:checked ~ .navbar-checkbox-label span::before,
+  .navbar-checkbox:checked ~ .navbar-checkbox-label span::after {
+    right: 0;
+    transition: right 500ms ease-in-out;
+  }
+
+  .navbar-checkbox-label span::before {
+      top: 7px;
+  }
+
+  .navbar-checkbox-label span::after {
+      bottom: 7px;
+  }
+
+}
+
+

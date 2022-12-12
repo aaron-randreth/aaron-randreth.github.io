@@ -1,0 +1,215 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.19.2
+2 info using node@v19.2.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/apollo-hub/coding/school/personalwebsite/.local/share/nvim/mason/.packages/css-lsp/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 6ms
+11 timing config:load:file:/home/apollo-hub/coding/school/personalwebsite/.npmrc Completed in 5ms
+12 timing config:load:user Completed in 6ms
+13 timing config:load:file:/usr/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 2ms
+18 timing config:load Completed in 26ms
+19 timing npm:load:configload Completed in 27ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm install vscode-langservers-extracted
+23 verbose argv "install" "vscode-langservers-extracted"
+24 timing npm:load:setTitle Completed in 2ms
+25 timing config:load:flatten Completed in 6ms
+26 timing npm:load:display Completed in 8ms
+27 verbose logfile logs-max:10 dir:/home/apollo-hub/coding/school/personalwebsite/.npm/_logs
+28 verbose logfile /home/apollo-hub/coding/school/personalwebsite/.npm/_logs/2022-12-10T20_37_43_945Z-debug-0.log
+29 timing npm:load:logFile Completed in 8ms
+30 timing npm:load:timers Completed in 1ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 49ms
+33 timing arborist:ctor Completed in 2ms
+34 silly logfile done cleaning log files
+35 timing arborist:ctor Completed in 0ms
+36 timing idealTree:init Completed in 21ms
+37 timing idealTree:userRequests Completed in 3ms
+38 silly idealTree buildDeps
+39 silly fetch manifest vscode-langservers-extracted@*
+40 http fetch GET 200 https://registry.npmjs.org/vscode-langservers-extracted 34ms (cache hit)
+41 silly placeDep ROOT vscode-langservers-extracted@4.5.0 OK for: @mason/css-lsp@1.0.0 want: *
+42 silly fetch manifest core-js@^3.20.1
+43 silly fetch manifest jsonc-parser@^3.2.0
+44 silly fetch manifest regenerator-runtime@^0.13.9
+45 silly fetch manifest request-light@^0.5.8
+46 silly fetch manifest typescript@^4.0.5
+47 silly fetch manifest vscode-css-languageservice@^6.1.1
+48 silly fetch manifest vscode-html-languageservice@^5.0.2
+49 silly fetch manifest vscode-json-languageservice@^5.1.1
+50 silly fetch manifest vscode-languageserver@^8.1.0-next.1
+51 silly fetch manifest vscode-languageserver-textdocument@^1.0.7
+52 silly fetch manifest vscode-languageserver-types@^3.17.2
+53 silly fetch manifest vscode-markdown-languageservice@^0.2.0-alpha.1
+54 silly fetch manifest vscode-nls@^5.2.0
+55 silly fetch manifest vscode-uri@^3.0.6
+56 http fetch GET 200 https://registry.npmjs.org/core-js 88ms (cache hit)
+57 http fetch GET 200 https://registry.npmjs.org/typescript 117ms (cache hit)
+58 http fetch GET 200 https://registry.npmjs.org/jsonc-parser 259ms (cache hit)
+59 http fetch GET 200 https://registry.npmjs.org/vscode-html-languageservice 257ms (cache hit)
+60 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 264ms (cache hit)
+61 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver 260ms (cache hit)
+62 http fetch GET 200 https://registry.npmjs.org/request-light 278ms (cache hit)
+63 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-types 273ms (cache hit)
+64 http fetch GET 200 https://registry.npmjs.org/vscode-markdown-languageservice 274ms (cache hit)
+65 http fetch GET 200 https://registry.npmjs.org/vscode-css-languageservice 287ms (cache hit)
+66 http fetch GET 200 https://registry.npmjs.org/vscode-uri 281ms (cache hit)
+67 http fetch GET 200 https://registry.npmjs.org/vscode-json-languageservice 292ms (cache hit)
+68 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-textdocument 291ms (cache hit)
+69 http fetch GET 200 https://registry.npmjs.org/vscode-nls 289ms (cache hit)
+70 timing idealTree:#root Completed in 373ms
+71 silly placeDep node_modules/vscode-langservers-extracted core-js@3.26.1 OK for: vscode-langservers-extracted@4.5.0 want: ^3.20.1
+72 silly placeDep node_modules/vscode-langservers-extracted jsonc-parser@3.2.0 OK for: vscode-langservers-extracted@4.5.0 want: ^3.2.0
+73 silly placeDep node_modules/vscode-langservers-extracted regenerator-runtime@0.13.11 OK for: vscode-langservers-extracted@4.5.0 want: ^0.13.9
+74 silly placeDep node_modules/vscode-langservers-extracted request-light@0.5.8 OK for: vscode-langservers-extracted@4.5.0 want: ^0.5.8
+75 silly placeDep node_modules/vscode-langservers-extracted typescript@4.9.4 OK for: vscode-langservers-extracted@4.5.0 want: ^4.0.5
+76 silly placeDep node_modules/vscode-langservers-extracted vscode-css-languageservice@6.2.1 OK for: vscode-langservers-extracted@4.5.0 want: ^6.1.1
+77 silly placeDep node_modules/vscode-langservers-extracted vscode-html-languageservice@5.0.3 OK for: vscode-langservers-extracted@4.5.0 want: ^5.0.2
+78 silly placeDep node_modules/vscode-langservers-extracted vscode-json-languageservice@5.1.3 OK for: vscode-langservers-extracted@4.5.0 want: ^5.1.1
+79 silly placeDep node_modules/vscode-langservers-extracted vscode-languageserver@8.1.0-next.3 OK for: vscode-langservers-extracted@4.5.0 want: ^8.1.0-next.1
+80 silly placeDep node_modules/vscode-langservers-extracted vscode-languageserver-textdocument@1.0.8 OK for: vscode-langservers-extracted@4.5.0 want: ^1.0.7
+81 silly placeDep node_modules/vscode-langservers-extracted vscode-languageserver-types@3.17.2 OK for: vscode-langservers-extracted@4.5.0 want: ^3.17.2
+82 silly placeDep node_modules/vscode-langservers-extracted vscode-markdown-languageservice@0.2.0 OK for: vscode-langservers-extracted@4.5.0 want: ^0.2.0-alpha.1
+83 silly placeDep node_modules/vscode-langservers-extracted vscode-nls@5.2.0 OK for: vscode-langservers-extracted@4.5.0 want: ^5.2.0
+84 silly placeDep node_modules/vscode-langservers-extracted vscode-uri@3.0.6 OK for: vscode-langservers-extracted@4.5.0 want: ^3.0.6
+85 silly fetch manifest @vscode/l10n@^0.0.10
+86 silly fetch manifest vscode-languageserver-protocol@3.17.3-next.3
+87 silly fetch manifest picomatch@^2.3.1
+88 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 22ms (cache hit)
+89 http fetch GET 200 https://registry.npmjs.org/picomatch 23ms (cache hit)
+90 http fetch GET 200 https://registry.npmjs.org/@vscode%2fl10n 28ms (cache hit)
+91 timing idealTree:node_modules/vscode-langservers-extracted Completed in 96ms
+92 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/core-js Completed in 0ms
+93 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/jsonc-parser Completed in 0ms
+94 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/regenerator-runtime Completed in 0ms
+95 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/request-light Completed in 0ms
+96 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/typescript Completed in 0ms
+97 silly placeDep node_modules/vscode-langservers-extracted @vscode/l10n@0.0.10 OK for: vscode-css-languageservice@6.2.1 want: ^0.0.10
+98 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-css-languageservice Completed in 3ms
+99 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/@vscode/l10n Completed in 0ms
+100 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-html-languageservice Completed in 0ms
+101 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-json-languageservice Completed in 0ms
+102 silly placeDep node_modules/vscode-langservers-extracted vscode-languageserver-protocol@3.17.3-next.3 OK for: vscode-languageserver@8.1.0-next.3 want: 3.17.3-next.3
+103 silly fetch manifest vscode-jsonrpc@8.1.0-next.4
+104 silly fetch manifest vscode-languageserver-types@3.17.3-next.1
+105 http fetch GET 200 https://registry.npmjs.org/vscode-jsonrpc 7ms (cache hit)
+106 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver Completed in 13ms
+107 silly placeDep node_modules/vscode-langservers-extracted vscode-jsonrpc@8.1.0-next.4 OK for: vscode-languageserver-protocol@3.17.3-next.3 want: 8.1.0-next.4
+108 silly placeDep node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol vscode-languageserver-types@3.17.3-next.1 OK for: vscode-languageserver-protocol@3.17.3-next.3 want: 3.17.3-next.1
+109 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol Completed in 17ms
+110 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-jsonrpc Completed in 0ms
+111 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-textdocument Completed in 0ms
+112 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-types Completed in 0ms
+113 silly placeDep node_modules/vscode-langservers-extracted picomatch@2.3.1 OK for: vscode-markdown-languageservice@0.2.0 want: ^2.3.1
+114 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-markdown-languageservice Completed in 3ms
+115 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/picomatch Completed in 0ms
+116 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-nls Completed in 0ms
+117 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-uri Completed in 0ms
+118 timing idealTree:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol/node_modules/vscode-languageserver-types Completed in 0ms
+119 timing idealTree:buildDeps Completed in 513ms
+120 timing idealTree:fixDepFlags Completed in 1ms
+121 timing idealTree Completed in 541ms
+122 timing reify:loadTrees Completed in 543ms
+123 timing reify:diffTrees Completed in 3ms
+124 silly reify moves {}
+125 timing reify:retireShallow Completed in 1ms
+126 timing reify:createSparse Completed in 16ms
+127 timing reify:loadBundles Completed in 0ms
+128 silly audit bulk request {
+128 silly audit   'vscode-langservers-extracted': [ '4.5.0' ],
+128 silly audit   'core-js': [ '3.26.1' ],
+128 silly audit   'jsonc-parser': [ '3.2.0' ],
+128 silly audit   'regenerator-runtime': [ '0.13.11' ],
+128 silly audit   'request-light': [ '0.5.8' ],
+128 silly audit   typescript: [ '4.9.4' ],
+128 silly audit   'vscode-css-languageservice': [ '6.2.1' ],
+128 silly audit   'vscode-html-languageservice': [ '5.0.3' ],
+128 silly audit   'vscode-json-languageservice': [ '5.1.3' ],
+128 silly audit   'vscode-languageserver': [ '8.1.0-next.3' ],
+128 silly audit   'vscode-languageserver-textdocument': [ '1.0.8' ],
+128 silly audit   'vscode-languageserver-types': [ '3.17.2', '3.17.3-next.1' ],
+128 silly audit   'vscode-markdown-languageservice': [ '0.2.0' ],
+128 silly audit   'vscode-nls': [ '5.2.0' ],
+128 silly audit   'vscode-uri': [ '3.0.6' ],
+128 silly audit   '@vscode/l10n': [ '0.0.10' ],
+128 silly audit   'vscode-languageserver-protocol': [ '3.17.3-next.3' ],
+128 silly audit   'vscode-jsonrpc': [ '8.1.0-next.4' ],
+128 silly audit   picomatch: [ '2.3.1' ]
+128 silly audit }
+129 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/regenerator-runtime Completed in 1104ms
+130 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/request-light Completed in 1130ms
+131 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-textdocument Completed in 1134ms
+132 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/picomatch Completed in 1142ms
+133 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/@vscode/l10n Completed in 1184ms
+134 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol/node_modules/vscode-languageserver-types Completed in 1209ms
+135 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-uri Completed in 1209ms
+136 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-types Completed in 1211ms
+137 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/jsonc-parser Completed in 1272ms
+138 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-nls Completed in 1275ms
+139 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1326ms
+140 timing auditReport:getReport Completed in 1331ms
+141 silly audit report {}
+142 timing auditReport:init Completed in 0ms
+143 timing reify:audit Completed in 1333ms
+144 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-jsonrpc Completed in 1336ms
+145 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-markdown-languageservice Completed in 1335ms
+146 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver Completed in 1339ms
+147 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol Completed in 1388ms
+148 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-json-languageservice Completed in 1401ms
+149 timing reifyNode:node_modules/vscode-langservers-extracted Completed in 1540ms
+150 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-html-languageservice Completed in 1558ms
+151 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/vscode-css-languageservice Completed in 1643ms
+152 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/core-js Completed in 3783ms
+153 timing reifyNode:node_modules/vscode-langservers-extracted/node_modules/typescript Completed in 3862ms
+154 timing reify:unpack Completed in 3865ms
+155 timing reify:unretire Completed in 1ms
+156 timing build:queue Completed in 4ms
+157 timing build:link:node_modules/vscode-langservers-extracted Completed in 14ms
+158 timing build:link:node_modules/vscode-langservers-extracted/node_modules/typescript Completed in 11ms
+159 timing build:link:node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver Completed in 11ms
+160 timing build:link Completed in 14ms
+161 info run core-js@3.26.1 postinstall node_modules/vscode-langservers-extracted/node_modules/core-js node -e "try{require('./postinstall')}catch(e){}"
+162 info run core-js@3.26.1 postinstall { code: 0, signal: null }
+163 timing build:run:postinstall:node_modules/vscode-langservers-extracted/node_modules/core-js Completed in 296ms
+164 timing build:run:postinstall Completed in 297ms
+165 timing build:deps Completed in 317ms
+166 timing build Completed in 319ms
+167 timing reify:build Completed in 319ms
+168 timing reify:trash Completed in 0ms
+169 timing reify:save Completed in 18ms
+170 timing reify Completed in 4798ms
+171 silly ADD node_modules/vscode-langservers-extracted
+172 silly ADD node_modules/vscode-langservers-extracted/node_modules/picomatch
+173 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-jsonrpc
+174 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol
+175 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-protocol/node_modules/vscode-languageserver-types
+176 silly ADD node_modules/vscode-langservers-extracted/node_modules/@vscode/l10n
+177 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-uri
+178 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-nls
+179 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-markdown-languageservice
+180 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-types
+181 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver-textdocument
+182 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-languageserver
+183 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-json-languageservice
+184 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-html-languageservice
+185 silly ADD node_modules/vscode-langservers-extracted/node_modules/vscode-css-languageservice
+186 silly ADD node_modules/vscode-langservers-extracted/node_modules/typescript
+187 silly ADD node_modules/vscode-langservers-extracted/node_modules/request-light
+188 silly ADD node_modules/vscode-langservers-extracted/node_modules/regenerator-runtime
+189 silly ADD node_modules/vscode-langservers-extracted/node_modules/jsonc-parser
+190 silly ADD node_modules/vscode-langservers-extracted/node_modules/core-js
+191 timing command:install Completed in 4810ms
+192 verbose exit 0
+193 timing npm Completed in 5001ms
+194 info ok
