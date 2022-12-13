@@ -250,7 +250,7 @@ class NavBar extends HTMLElement {
 customElements.define("nav-bar", NavBar);
 
 function search(search_str) {
-  if (document.getElementById("searchable-section") == null){
+  if (document.getElementsByClassName("searchable-section").length == 0){
     alert("Nothing to search here")
     return
   }
@@ -267,6 +267,6 @@ function search(search_str) {
 
     article.style.visibility = (in_query) ? "visible" : "hidden";
     article.style.maxHeight = (in_query) ? "1000px" : 0;
-    article.style.maxWidth = (in_query) ? "1000px" : 0;
+    article.style.maxWidth = (in_query) ? "var(--max-card-size)" : 0;
   }
 }
