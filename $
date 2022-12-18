@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
 </head>
 
@@ -33,12 +32,7 @@
         </picture>
 
         <section class="project-content">
-          <ul class="tags highlight">
-            <li>tech</li>
-            <li>jeux</li>
-            <li>web</li>
-            <li>fullstack</li>
-          </ul>
+          <ul class="tags highlight"><li>Tech</li></ul>
           <h3 class="project-title">GeoChecheur</h3>
           <p class="project-description">
             GéoChercheur est une récréation du fameux jeu en ligne <a href="https://www.geoguessr.com/">Geoguessr</a>. Cette
@@ -55,10 +49,7 @@
         </picture>
 
         <section class="project-content">
-          <ul class="tags highlight">
-            <li>tech</li>
-            <li>jeux</li>
-          </ul>
+          <div class="tags highlight">Tech</div>
           <h3 class="project-title">Simple Games Suite</h3>
           <p class="project-description">
             Quoi de mieux que les classiques du Jeu Vidéo pour passer du bon temps ?<br><br>
@@ -75,11 +66,7 @@
         </picture>
 
         <section class="project-content">
-          <ul class="tags highlight">
-            <li>tech</li>
-            <li>livres</li>
-            <li>webnovel</li>
-          </ul>
+          <div class="tags highlight">Tech</div>
           <h3 class="project-title">RoyalScrapper</h3>
           <p class="project-description">
             Fatigué de ne plus pouvoir lire le dernier chapitre de votre webnovel, juuuste au moment où ça devenait intéressant ?<br><br>
