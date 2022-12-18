@@ -86,10 +86,10 @@ h2, h2 * {
 }
 
 .highlight {
-  --color: var(--clr-secondary-100);
+  --highlight-color: var(--clr-secondary-100);
   text-transform: capitalize;
   font-family: "Kenia";
-  color: var(--color);
+  color: var(--highlight-color);
 }
 
 @media (min-width: 600px) {
@@ -124,6 +124,15 @@ h2, h2 * {
   justify-content: center;
 }
 
+.project-section .highlight {
+  --highlight-color: var(--clr-primary-1000);
+}
+
+.project-section a {
+  color: var(--clr-primary-1000);
+  font-weight: bold;
+}
+
 .project-item {
   color: var(--clr-primary-1000);
   background-color: var(--clr-secondary-100);
@@ -143,6 +152,7 @@ h2, h2 * {
 
 .project-title {
   font-size: 2em;
+  text-decoration: underline;
 }
 
 .project-content {
