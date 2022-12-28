@@ -240,6 +240,18 @@ class NavBar extends HTMLElement {
     search_bar.addEventListener("input", () => {
       search(search_bar.value);
     });
+
+    window.addEventListener("load", 
+      () => {
+       if (document.getElementsByClassName("searchable-section").length == 0){
+        search_bar.style.display = "none";
+        // search_bar.disabled =  true;
+        // search_bar.style.cursor = "not-allowed";
+      }       
+    })
+
+
+
   }
 
   append_new(parent, child_type, child_attributes) {
@@ -250,11 +262,6 @@ class NavBar extends HTMLElement {
 customElements.define("nav-bar", NavBar);
 
 function search(search_str) {
-  if (document.getElementsByClassName("searchable-section").length == 0){
-    alert("Nothing to search here")
-    return
-  }
-
   let articles = Array.from(document.querySelectorAll(".searchable-section article"));
   let query = search_str.trim().toLowerCase(); 
 
