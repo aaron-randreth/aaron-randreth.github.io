@@ -17,7 +17,8 @@ class NavBar extends HTMLElement {
     // Injected to avoid Flashed of unstyled content
     this.append_new(this.shadowRoot, "style", 
       {
-        innerHTML: `/* Navbar */
+        innerHTML: `
+/* Navbar */
 
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 
@@ -63,6 +64,7 @@ class NavBar extends HTMLElement {
   font-size: 2rem;
 
   text-align: center;
+  text-decoration: none;
 }
 
 .navbar-list {
@@ -142,13 +144,15 @@ class NavBar extends HTMLElement {
   }
 
   .navbar-list {
+    --animation-speed: 500ms;
+
     max-height: 1000px;
     transform-origin: top;
     transition: 
-      max-height 500ms ease-in-out,
-      margin 1s ease-in-out, 
-      padding 1s ease-in-out, 
-      opacity 400ms ease-in;
+      max-height calc(var(--animation-speed) / 2) ease-in-out,
+      margin var(--animation-speed) ease-in-out, 
+      padding var(--animation-speed) ease-in-out, 
+      opacity calc(var(--animation-speed) / 2 - 100ms) ease-in;
 
     grid-column: 1 / 4;
     grid-row:2;
@@ -195,7 +199,6 @@ class NavBar extends HTMLElement {
   .navbar-checkbox:checked ~ .navbar-checkbox-label span::before,
   .navbar-checkbox:checked ~ .navbar-checkbox-label span::after {
     right: 0;
-    transition: right 500ms ease-in-out;
   }
 
   .navbar-checkbox-label span::before {
@@ -217,7 +220,7 @@ class NavBar extends HTMLElement {
 
           // <img class="logo" src="assets/img/tmp-logo2.png" alt="logo">
     navbar.innerHTML = `
-          <p class="logo">Aaron</p>
+          <a class="logo" href="index.html" alt="retour à l'acceuil">Aaron</a>
           <input class="navbar-checkbox" type="checkbox" name="navbar-checkbox" id="navbar-checkbox" checked>
           <label class="navbar-checkbox-label" for="navbar-checkbox"><span></span></label>
           <ul class="navbar-list">
