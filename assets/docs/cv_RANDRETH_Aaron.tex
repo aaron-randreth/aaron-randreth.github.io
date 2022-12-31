@@ -1,0 +1,237 @@
+\documentclass{article}
+
+% Languages 
+\newcommand\en[1]{#1}
+\newcommand\fr[1]{}
+
+%% PACKAGES %%
+
+\usepackage[english]{babel} % multilingual support
+\usepackage[utf8]{inputenc} % encoding
+
+% Default font 
+\usepackage{tgpagella}
+
+% Allowing urls
+\usepackage{hyperref}
+
+% Changing the page layout 
+
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=20mm,
+  top=15mm,
+  bottom=20mm
+  }
+
+  
+
+
+% empty the headers, footers, pagenumbers…
+\pagestyle{empty}
+
+% Custom sectioning with secsty
+\usepackage{sectsty}
+
+\sectionfont{%                        
+    \large % make sections smaller
+    \fontfamily{qag}\selectfont % change font family
+    \sectionrule{0pt}{0pt}{-5pt}{1pt} % insert a thin rule
+}
+
+%% MACROS %%
+
+% size of the boxes used to align text
+\newlength{\spacebox}
+\settowidth{\spacebox}{123456789}
+
+% vertical space separator between entries
+\newcommand{\sepspace}{\vspace*{1em}}
+% name
+\newcommand{\name}[1]{
+\Huge % font size
+\fontfamily{phv}\selectfont % font family
+% print name centered and bold
+\begin{center} \textbf{#1} \end{center}\par
+% back to normal size and font
+\normalsize\normalfont}
+
+% goal
+\newcommand{\goal}[1]{
+  \large % font size
+  \fontfamily{phv}\selectfont % font family
+% print goal centered and slanted
+  \begin{center} \textsl{#1}\end{center}\par
+% back to normal size and font
+  \normalsize \normalfont}
+
+% personal information
+\newcommand{\info}[2]{
+% set specific indentation for personal information
+  \noindent\hangindent=2em\hangafter=0
+% create a box to align two pieces of text
+  \parbox{\spacebox}{%
+  \textsl{#1}} % slanted entry name
+  #2 \par} % entry value
+
+% skill
+\newcommand{\skill}[2]{
+% set specific indentation for personal information
+\noindent\hangindent=2em\hangafter=0
+% create a box to align two pieces of text
+\parbox{3\spacebox}{% three times larger box
+	\textbf{\textsc{#1}}} % small caps entry name
+#2 \par} % entry value
+
+% language level
+\newcommand{\lan}[2]{
+    % set specific indentation for personal information
+    \par\noindent\hangindent=2em\hangafter=0
+    % create a box to align two pieces of text
+    \parbox{\spacebox}{%
+        \textbf{#1}} % bold font entry name
+     #2
+}    % entry value
+
+\newcommand{\lancert}[3]{
+  \noindent\lan{#1}{#2}\hfill#3\texttt{ |}
+}
+
+% education entry
+\newcommand{\education}[4]{
+
+% name of the studies
+  \noindent  \textbf{#1}
+  % at the right the duration
+    \hfill 
+    \framebox{% duration inside a frame box
+    \parbox{6em}{%
+    \centering\textbf{#2}}} \par
+ % new paragraph with the school in italics
+     \noindent \textit{#3} \par
+     % description with no hanging and in smaller text
+     \vspace*{0.5em}
+     \noindent\hangindent=2em\hangafter=0 \small #4 
+%back to normal size
+\normalsize \par}
+
+% work experience
+
+\newcommand{\work}[4]{
+% name of the work
+  \noindent  \textbf{#1}
+% at the right the duration
+  \hfill 
+\framebox{% duration inside a frame box
+  \parbox{6em}{%
+  \centering\textbf{#2}}} \par
+% new paragraph with the school in italics
+  \noindent \textit{#3} \par
+% description with no hanging and in smaller text
+  \vspace*{0.5em}
+  \noindent\hangindent=2em\hangafter=0 \small #4 
+%back to normal size
+\normalsize \par}
+
+% education entry
+\newcommand{\interet}[4]{
+
+% name of the studies
+  \noindent  \textbf{#1}
+  % at the right the duration
+    \hfill 
+    \par
+ % new paragraph with the school in italics
+     \noindent \textit{#3} \par
+     % description with no hanging and in smaller text
+     \vspace*{0.5em}
+     \noindent\hangindent=2em\hangafter=0 \small #4 
+%back to normal size
+\normalsize \par}
+
+\begin{document}
+
+% name and goal
+\name{Aaron RANDRETH}
+% \goal{
+%   \fr{Candidate pour un stage de développement de 2 mois au Canada}
+%   \en{Applying for a 2 months software development internship in Canada}}
+\vspace*{-10pt}
+
+% personal information
+\sepspace
+\info{\fr{Téléphone}\en{Phone}}{+33 6 11 10 83 49}
+\info{\fr{Email}\en{Email}}{pro@aaron-randreth.com}
+%\info{Addresse}{69 clos de la briqueterie, Auneuil / 60 390, France}
+% \info{LinkedIn}{...}
+\info{Portfolio}{\href{https://aaron-randreth.com}{aaron-randreth.com}}
+
+% education
+\section*{\fr{Éducation}\en{Education}}
+
+\education{
+  \fr{Bachelor Universitaire de Technologie en Informatique}
+  \en{Bachelor in Computer Science}}{2021--2024}{
+  \fr{I.U.T de Paris Rives de Seine (anciennement Paris Descartes)}
+  \en{I.U.T Paris Descartes, University Of Paris Cité}}
+{\en{
+\begin{itemize}
+  \item Re-wrote several classic games (snakes, minesweeper, hex) in OOP languages such as Java and C++ in teams of 3 to 6, following a Test Driven and Agile SCRUM development strategy.
+  \item Applied Design Patterns to refactor various software and games, allowing us to extend them with new functionalities among which were alternative game modes for our games.
+  \item Analyzed client needs and refined their demands so as to allow them to be used as a foundation for a SCRUM Backlog.
+  \item Worked on the conception, optimization, and deployment of live databases in SQL.
+  \item Wrote implementations of mathematical algorithms like Dijkstra and Bellman's shortest graph path finder in Java, and Python.
+\end{itemize}
+}}
+
+\sepspace
+
+\fr{
+
+\education{Bac général | Mention bien}{2018--2021}{Lycée Félix Faure, Beauvais}{Spécialité Math, NSI, Physique, avec options Math expertes et Physique en anglais}
+
+\sepspace
+
+\education{Brevet d’Initiation à l’Aéronautique | Mention très bien}{2019}{Lycée Félix Faure, Beauvais}{}
+}
+
+% technical skills
+\section*{\fr{Compétences techniques}\en{Technical skills}}
+
+\skill{\fr{Programmation}\en{Development} \mbox{(\fr{intermédiaire}\en{intermediary})}}{\textsc{Java}, \textsc{C/C++}, \textsc{Python}}
+
+\sepspace
+\skill{Web}{\textsc{Html/Css/Js}, \textsc{Hugo}, \textsc{Tailwind}}
+\skill{Autres}{\textsc{Git}, \textsc{Trello}, \textsc{ArchLinux}, \textsc{Markdown},  \textsc{Vim}}
+
+% languages
+\section*{\fr{Langues}\en{Languages}}
+\lan{\fr{Français}\en{French}}{\fr{natif}\en{native proficiency}}
+\lan{\fr{Malgache}\en{Malagasy}}{\fr{maternel}\en{maternal language}}
+\lancert{\fr{Anglais}\en{English}}{\fr{maîtrise avancée}\en{upper intermediate proficiency}}{Cambridge B2}
+\lan{\fr{Italien}\en{Italian}}{\fr{maîtrise élémentaire}\en{elementary proficiency}}
+
+% personal experiences
+\section*{\fr{Experiences personelles}\en{Personal experiences}}
+
+\education{Trans-Alpes}{2019--2020}
+{Lycée Félix Faure, Beauvais | Liceo Linguistico G.Ancina, Fossano}
+{\fr{Un programme d’échange de deux mois avec formation d’un mois dans un lycée Italien}\en{A 2 months long cultural exchange program with a month spent studying in an Italian High school}}
+
+\sepspace
+
+\education{\fr{Commémorations historiques}\en{Historical memory work}}{2019--2020}{Beauvais}{\fr{Participation dans des pièce de théâtre et lectures de textes pour des commémorations de la Première et \mbox{Seconde} Guerre Mondiale.}\en{Participated in plays, and read speeches for a few Remembrance days}}
+
+\sepspace
+
+\fr{
+\education{\fr{Échanges culturels}\en{Cultural exchanges}}{2018--2019}{\fr{Italie, Allemagne, Angleterre}\en{Italy, Germany, England}}{\fr{Échanges culturels de plusieurs semaines chez des familles anglaises, italiennes, et allemandes.}\fr{}}
+}
+
+\section*{\fr{Centres d'intérêts}\en{Hobbies}}
+
+\interet{\fr{Production audiovisuelle}\en{Audiovisual production}}{}{Blender (\fr{Animation et Modelisation 3D}\en{3D Modelling and Animation}), Kdenlive (\fr{Montage vidéo}\en{Video Editing}), Helio (\fr{Production musicale}\en{Musical Production})}{}
+\interet{\fr{Activitées sportives}\en{Sports}}{}{Volley Ball, \fr{Course à pieds}\en{Running}, \fr{Randonnée}\en{Hiking}}{}
+
+\end{document}

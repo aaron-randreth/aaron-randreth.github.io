@@ -227,7 +227,6 @@ class NavBar extends HTMLElement {
             <li><a href="projects.html">projets</a></li>
             <li><a href="xp.html">experiences</a></li>
             <li><a href="tools.html">outils</a></li>
-            <li><a href="index.html">About me</a></li>
           </ul>
           <input id="search-bar" class="search-bar" type="text" name="" value="">`;
 
