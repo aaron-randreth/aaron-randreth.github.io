@@ -80,6 +80,7 @@
 }
 
 .search-bar {
+  display: none;
   height: 2rem;
   width: 100%;
   background: white;
@@ -119,6 +120,7 @@
   }
 
   .search-bar {
+    display: none;
     grid-column: 1 / 4;
     grid-row:3;
   }

@@ -100,6 +100,7 @@ class NavBar extends HTMLElement {
 }
 
 .search-bar {
+  display: none;
   height: 2rem;
   width: 100%;
   background: white;
@@ -245,10 +246,8 @@ class NavBar extends HTMLElement {
 
     window.addEventListener("load", 
       () => {
-       if (document.getElementsByClassName("searchable-section").length == 0){
-        search_bar.style.display = "none";
-        // search_bar.disabled =  true;
-        // search_bar.style.cursor = "not-allowed";
+       if (document.getElementsByClassName("searchable-section").length != 0){
+        search_bar.style.display = "block";
       }       
     })
 
