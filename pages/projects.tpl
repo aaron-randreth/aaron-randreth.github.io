@@ -25,17 +25,7 @@
 </head>
 
 <body>
-  <nav class="main-navbar focus-grow">
-  <a class="logo" href="index.html" alt="retour à l'acceuil">Aaron</a>
-  <input class="navbar-checkbox" type="checkbox" name="navbar-checkbox" id="navbar-checkbox" checked>
-  <label class="navbar-checkbox-label" for="navbar-checkbox"><span></span></label>
-  <ul class="navbar-list">
-    <li><a href="projects.html">projets</a></li>
-    <li><a href="xp.html">experiences</a></li>
-    <li><a href="tools.html">outils</a></li>
-  </ul>
-  <input id="search-bar" class="search-bar" type="text" name="" value="">
-</nav>
+  #include "partials/navbar.html"
   <main class="flex-group">
     <h2 class="section-title">Mes projets <span class="highlight">tech</span></h2>
     <p class="section-description">
@@ -160,28 +150,7 @@
 
     <!-- </section> -->
   </main>
-    <footer class="footer">
-    <section>
-      <h4>Documents utiles</h4>
-      <ul class="socials">
-        <li><a href="assets/docs/cv_RANDRETH_Aaron_fr.pdf">mon CV <i class="footer-item-logo fa-solid fa-user"></i></a></li>
-        <li><a href="assets/docs/cv_RANDRETH_Aaron_en.pdf">my CV <i class="footer-item-logo fa-solid fa-user"></i></a></li>
-      </ul>
-    </section>
-    <section>
-      <h4>Contact Me</h4>
-      <ul class="socials">
-        <li><a href="">linkedin <i class="footer-item-logo fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/aaron-randreth">github <img class="footer-item-logo" src="assets/media/logos/github-mark-white.svg" alt="github logo"></a></li>
-        <li><a href="&#77;&#65;&#73;&#108;&#84;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#45;&#112;&#114;&#111;&#64;&#97;&#97;&#114;&#111;&#110;&#45;&#114;&#97;&#110;&#100;&#114;&#101;&#116;&#104;&#46;&#99;&#111;&#109;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#80;&#101;&#114;&#115;&#111;&#110;&#110;&#97;&#108;&#37;&#50;&#48;&#87;&#101;&#98;&#115;&#105;&#116;&#101;&#37;&#50;&#48;&#67;&#111;&#110;&#116;&#97;&#99;&#116;" title="email me at contact-pro@aaron-randreth.com">email</a> <i class="footer-item-logo fa-solid fa-envelope"></i></li>
-      </ul>
-    </section>
-    <section>
-      <h1 class="highlight logo-giant">Aaron Randreth</h1>
-      <p>Copyright 2023 © </p>
-    </section>
-  </footer>
-
+  #include "partials/footer.html"
 </body>
 
 </html>

@@ -1,23 +1,5 @@
 /* Navbar */
 
-@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
-
-:root{
-  --clr-primary-1000: #010b13;
-  --clr-primary-900: #100c08;
-  --clr-secondary-500: grey;
-  --clr-secondary-100: #EDB0DD;
-  --clr-secondary-0: #fef4ec;
-}
-
-.highlight {
-  --color: var(--clr-secondary-100);
-  font-family: "Kenia";
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--color);
-}
-
 .search-bar:is(:focus, :focus-visible) {
   outline: 6px double var(--clr-secondary-100);;
 }
