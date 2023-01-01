@@ -108,7 +108,7 @@
    }
 
    .navbar-list {
-     --animation-speed: 500ms;
+     --animation-speed: 750ms;
 
      max-height: 1000px;
      transform-origin: top;
@@ -116,7 +116,7 @@
        max-height calc(var(--animation-speed) / 2) ease-in-out,
        margin var(--animation-speed) ease-in-out, 
        padding var(--animation-speed) ease-in-out, 
-       opacity calc(var(--animation-speed) / 2 - 100ms) ease-in;
+       opacity calc(var(--animation-speed) / 2 - 100ms) ease-in-out 50ms;
 
      grid-column: 1 / 4;
      grid-row:2;
