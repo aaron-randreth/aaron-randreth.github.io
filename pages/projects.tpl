@@ -27,19 +27,22 @@
 <body>
   #include "partials/navbar.html"
   <main class="flex-group">
-    <h2 class="section-title">Mes projets <span class="highlight">tech</span></h2>
-    <p class="section-description">
-      La technologie étant ma passion, j'ai accumulé au fil des années de nombreux projets personnels et académiques.
-      J'ai compilé ici quelques-uns des plus intéressants, techniquement ou autre <span class="highlight">^.^</span>.
-    </p>
+
     <section class="project-section searchable-section">
+      <h2 class="section-title flex-full-line">Mes projets <span class="highlight">tech</span></h2>
+      <div class="flex-full-line flex-center">
+        <p class="section-description">
+          La technologie étant ma passion, j'ai accumulé au fil des années de nombreux projets personnels et académiques.
+          J'ai compilé ici quelques-uns des plus intéressants, techniquement ou autre <span class="highlight">^.^</span>.
+        </p>
+      </div>
 
       <article class="project-item select-animation">
         <picture class="project-cover">
           <img src="assets/media/doggos/mad.jpg" alt="">
         </picture>
 
-        <section class="project-content">
+        <div class="project-content">
           <ul class="tags highlight">
             <li>tech</li>
             <li>jeux</li>
@@ -53,7 +56,7 @@
             n'avez plus qu'à sortir vos outils de détective, à vous de jouer!
           </p>
           <button class="button" type="button">Check me out!</button>
-        </section>
+        </div>
       </article>
 
       <article class="project-item select-animation">
@@ -61,7 +64,7 @@
           <img src="assets/media/doggos/headphones.jpg" alt="">
         </picture>
 
-        <section class="project-content">
+        <div class="project-content">
           <ul class="tags highlight">
             <li>tech</li>
             <li>jeux</li>
@@ -73,7 +76,7 @@
             pour votre plus grand plaisir <span class="highlight">:)</span> (et aussi pour nous entrainer à la programmation).
           </p>
           <button class="button" type="button">Check me out!</button>
-        </section>
+        </div>
       </article>
 
       <article class="project-item select-animation">
@@ -81,7 +84,7 @@
           <img src="assets/media/doggos/mad.jpg" alt="">
         </picture>
 
-        <section class="project-content">
+        <div class="project-content">
           <ul class="tags highlight">
             <li>tech</li>
             <li>livres</li>
@@ -93,63 +96,14 @@
             RoyalScrapper vous permet de sauvegarder une copie de toute une fiction ou d'un chapitre, du site <a href="https://www.royalroad.com">RoyalRoad</a>.
           </p>
           <button class="button" type="button">Check me out!</button>
-        </section>
+        </div>
       </article>
 
     </section>
 
     <!-- <hr> -->
 
-    <!-- <h2 class="section-title">Mes projets <span class="highlight">artistiques</span></h2> -->
-    <!-- <p class="section-description">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint -->
-    <!--   consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur -->
-    <!--   cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat. -->
-    <!-- </p> -->
-    <!-- <section class="project-section searchable-section"> -->
-
-    <!--   <article class="project-item select-animation"> -->
-    <!--     <picture class="project-cover"> -->
-    <!--       <img src="assets/media/doggos/headphones.jpg" alt=""> -->
-    <!--     </picture> -->
-
-    <!--     <section class="project-content"> -->
-    <!--       <div class="tags highlight">art</div> -->
-    <!--       <h3 class="project-title">Simple Games Suit</h3> -->
-    <!--       <p class="project-description">GéoChercheur est une récréation du fameux jeu en ligne <b>Géoguessr</b>. Cette -->
-    <!--         version est gratuite, open-source, et entièrement basé sur les technologies de l'Open Data. <br><br> Vous -->
-    <!--         n'avez plus qu'à sortir vos outils de détéctives, à vous de jouez!</p> -->
-    <!--       <button class="button" type="button">Check me out!</button> -->
-    <!--     </section> -->
-    <!--   </article> -->
-
-    <!-- </section> -->
-
-    <!-- <hr> -->
-
-    <!-- <h2 class="section-title">Mes projets <span class="highlight">humanitaires</span></h2> -->
-    <!-- <p class="section-description">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint -->
-    <!--   consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur -->
-    <!--   cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat. -->
-    <!-- </p> -->
-    <!-- <section class="project-section searchable-section"> -->
-
-    <!--   <article class="project-item select-animation"> -->
-    <!--     <picture class="project-cover"> -->
-    <!--       <img src="assets/media/doggos/headphones.jpg" alt=""> -->
-    <!--     </picture> -->
-
-    <!--     <section class="project-content"> -->
-    <!--       <div class="tags highlight">art</div> -->
-    <!--       <h3 class="project-title">Simple Games Suit</h3> -->
-    <!--       <p class="project-description">GéoChercheur est une récréation du fameux jeu en ligne <b>Géoguessr</b>. Cette -->
-    <!--         version est gratuite, open-source, et entièrement basé sur les technologies de l'Open Data. <br><br> Vous -->
-    <!--         n'avez plus qu'à sortir vos outils de détéctives, à vous de jouez!</p> -->
-    <!--       <button class="button" type="button">Check me out!</button> -->
-    <!--     </section> -->
-    <!--   </article> -->
-
-    <!-- </section> -->
-  </main>
+    </main>
   #include "partials/footer.html"
 </body>
 

@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
 
 function search(search_str) {
   let articles = Array.from(document.querySelectorAll(".searchable-section article"));
+  console.log(articles)
   let query = search_str.trim().toLowerCase(); 
 
   for (const article of articles) {

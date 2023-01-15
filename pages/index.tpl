@@ -30,32 +30,32 @@
 
     <article class="about-article flex-group">
       <img class="rounded-image full-color" src="assets/media/me/new_id_photo.jpg" alt="">
-      <section>
+      <div>
         <h2 class="section-title">techie</h2>
         <p class="section-description">
           Je suis <span class="highlight">fasciné </span>depuis l'enfance par la technologie, et son influence sur nos vies. Cette passion m'a mené à
           un BUT couvrant tous les aspects de la conception des logiciels, à l'IUT Paris Descartes.
         </p>
-      </section>
+      </div>
     </article>
 
     <article class="about-article flex-group">
       <img class="rounded-image full-color" src="assets/media/me/sunglasses.jpg" alt="">
-      <section>
+      <div>
         <h2 class="section-title">Artiste digital <span class="highlight">/</span> Vidéaste</h2>
         <p class="section-description">
           Deux de mes passe-temps favoris sont la création de scènes 3D 
         </p>
-      </section>
+      </div>
     </article>
 
     <article class="about-article flex-group">
       <img class="rounded-image full-color" src="assets/media/me/20210710_143902.jpg" alt="">
-      <section>
+      <div>
         <h2 class="section-title">Écrivain</h2>
         <p class="section-description">
         </p>
-      </section>
+      </div>
     </article>
 
   </main>
