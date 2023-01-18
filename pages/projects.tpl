@@ -55,7 +55,7 @@
             version est gratuite, open-source, et entièrement basée sur les technologies de l'Open Data. <br><br> Vous
             n'avez plus qu'à sortir vos outils de détective, à vous de jouer!
           </p>
-          <button class="button" type="button">Check me out!</button>
+          <a class="button" href="geochercheur.html">En appprendre plus</a>
         </div>
       </article>
 

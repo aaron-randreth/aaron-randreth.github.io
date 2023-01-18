@@ -38,8 +38,23 @@ img:not([src^=".svg"], .full-color) {
   filter: var(--img-filter);
 }
 
+h1 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
 h2, h2 * {
   font-size: 2rem;
+}
+
+ul {
+  padding-left: 3rem;
+}
+
+@media (max-width: 800px) {
+  ul {
+    padding-left: 1rem;
+  }
 }
 
 * {
@@ -69,6 +84,9 @@ h2, h2 * {
 
   --animation-speed: 250ms;
   color: var(--clr-secondary-100);
+  text-decoration: none;
+  text-align: center;
+
   background-color: var(--clr-primary-1000);
   transition: 
     color var(--animation-speed) ease-in-out, 
@@ -99,6 +117,10 @@ h2, h2 * {
   text-transform: capitalize;
   font-family: "Kenia";
   color: var(--highlight-color);
+}
+
+main.article * {
+  max-width: 40rem;
 }
 
 @media (min-width: 600px) {
@@ -146,11 +168,6 @@ h2, h2 * {
   --highlight-color: var(--clr-primary-1000);
 }
 
-.project-section a {
-  color: var(--clr-primary-1000);
-  font-weight: bold;
-}
-
 .project-item {
   color: var(--clr-primary-1000);
   background-color: var(--clr-secondary-100);
@@ -158,6 +175,11 @@ h2, h2 * {
   border-radius: 0.5rem;
   overflow: hidden;
   max-width: var(--max-card-size);
+}
+
+.project-item a:not(.button) { /* Kinda dirty workaround */
+  color: var(--clr-primary-1000);
+  font-weight: bold;
 }
 
 .project-item .button {
@@ -292,7 +314,18 @@ h2, h2 * {
     border-radius: 2rem;
   }
 
-  .xp-article: {
+  .xp-article {
     border: none;
   }
+}
+
+#TOC {
+  border-radius: 15px;
+  background-color: var(--clr-primary-900);
+  padding: 1rem;
+}
+
+#TOC a{
+  color: var(--clr-primary-0);
+  text-decoration: none;
 }
