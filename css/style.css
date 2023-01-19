@@ -30,7 +30,7 @@ hr {
 }
 
 img {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
 }
 
@@ -328,4 +328,10 @@ main.article * {
 #TOC a{
   color: var(--clr-primary-0);
   text-decoration: none;
+}
+
+.asset-credit, .asset-credit * {
+  background-color: #E1D9D1;
+  text-align: center;
+  font-size: 12px;
 }
