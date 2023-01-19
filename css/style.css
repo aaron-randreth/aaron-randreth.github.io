@@ -12,8 +12,11 @@
   font-family: 'raleway';
 }
 
-body {
+* {
   color: var(--clr-secondary-0);
+}
+
+body {
   background-color: var(--clr-primary-1000);
   overflow-x: hidden;
 }
@@ -334,4 +337,14 @@ main.article * {
   background-color: #E1D9D1;
   text-align: center;
   font-size: 12px;
+}
+
+#title-404 {
+  font-size: 10rem;
+  text-decoration: none;
+} 
+
+#text-404 {
+  max-width: 40rem;
+  text-align: center;
 }

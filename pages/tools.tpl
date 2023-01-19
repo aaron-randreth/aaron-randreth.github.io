@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <title>Mes outils | Aaron Randreth</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+#define TITLE Mes outils
 
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-
-  <link href="css/reset.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
-  <link href="css/navbar.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-
-  <script src="js/navbar.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-</head>
+#include "partials/head.html"
 
 <body>
   #include "partials/navbar.html"
