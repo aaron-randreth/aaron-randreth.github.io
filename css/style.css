@@ -12,11 +12,8 @@
   font-family: 'raleway';
 }
 
-* {
-  color: var(--clr-secondary-0);
-}
-
 body {
+  color: var(--clr-secondary-0);
   background-color: var(--clr-primary-1000);
   overflow-x: hidden;
 }
