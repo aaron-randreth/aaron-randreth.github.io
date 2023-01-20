@@ -1,13 +1,19 @@
 <head>
   <title>
     #ifdef TITLE
-    TITLE | 
+      TITLE | 
     #endif
     Aaron Randreth
   </title>
   <meta name="author" content="Aaron Randreth">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" 
+    #ifndef DESC
+      content="Le site personnel de Aaron Randreth, un étudiant en programmation informatique, un artiste audiovisuel, et un écrivain."
+    #else 
+      content="DESC"
+    #endif
+    >
+  <meta name="keywords" content="Tech, Art, Dev">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

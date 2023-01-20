@@ -41,6 +41,7 @@
 </nav>
 
   <main class="about-container flex-group article">
+    <h1>Rapport de conception: Géogussr</h1>
     <nav id="TOC" role="doc-toc">
       <ul>
         <li><a href="#notre-concept" id="toc-notre-concept">Notre
@@ -90,7 +91,7 @@
         </li>
       </ul>
     </nav>
-    <h1 id="notre-concept">Notre Concept</h1>
+    <h2 id="notre-concept">Notre Concept</h2>
     <p>Geochercheur est un jeu inspiré de GeoGuessr. Dans le concept de
       base, le joueur est placé aléatoirement dans un endroit spécifique dans
       le monde et son objectif est de deviner sa position sur une carte. Nous
@@ -101,7 +102,7 @@
       déplacer. Mais le but final sera quand même de placer le marqueur le
       plus près possible de la bonne position sur la carte. Ainsi un certain
       nombre de point sera calculé selon cette distance.</p>
-    <h1 id="présentation-du-site">Présentation du Site</h1>
+    <h2 id="présentation-du-site">Présentation du Site</h2>
     <figure>
       <img src="https://cdn.discordapp.com/attachments/1041750500003029165/1060625969490178058/image.png"
         alt="” Page d’accueil” : Cette page est la première que le joueur rencontrera lorsqu’il ira sur le site. Son objectif est de donner envie à la personne de jouer au jeu. Dessus on peut y apercevoir un carrousel avec des commentaires de joueur et un message de bienvenue." />
@@ -186,13 +187,13 @@
       <figcaption aria-hidden="true">“Page de Leaderboard”: Cette version de
         la page a un classement de parcours séléctionné.</figcaption>
     </figure>
-    <h2 id="à-noter">À noter</h2>
+    <h3 id="à-noter">À noter</h3>
     <p>Les screenshots de la version mobile du site ont été omis pour ne pas
       encombrer le rapport, cependant le front-end est entièrement responsive
       et nous avons même joué à notre jeu sur un vrai téléphone grace au
       serveur local Uwamp/xampp.</p>
-    <h2 id="la-fin-du-début-comment-jouer">La fin du début | Comment jouer
-      ?</h2>
+    <h3 id="la-fin-du-début-comment-jouer">La fin du début | Comment jouer
+      ?</h3>
     <p>Et voilà! La présentation du site est terminée, et vous savez tout ce
       qu’il y a à savoir pour lancer le projet. Nous parlons plus en détail
       des aspects techniques et de la conception du jeu dans la suite du
@@ -201,7 +202,7 @@
       <code>SQL/insert</code> afin de mettre en place les tables et les
       parcours de démonstration.
     </p>
-    <h1 id="nos-technologies">Nos Technologies</h1>
+    <h2 id="nos-technologies">Nos Technologies</h2>
     <p>Pour la création de ce site, un de nos objectifs a été de baser les
       fondations de notre jeu sur des technologies de l’Open Data. Après
       beaucoup de recherches et de difficultés à apprendre à utiliser les
@@ -209,8 +210,8 @@
       objectif et à utiliser l’Open Data pour l’entièreté du site. Pour cela
       nous avons maitrisé les outils de leaflet, mapillary, et Uwamp/Xampp
       avec MySql.</p>
-    <h2 id="le-front-end-leaflet-et-mapillary">Le front-end: Leaflet et
-      Mapillary</h2>
+    <h3 id="le-front-end-leaflet-et-mapillary">Le front-end: Leaflet et
+      Mapillary</h3>
     <p>La page centrale de notre applicatif <code>jeu.html</code>, est
       portée par deux technologies combinées.</p>
     <p>Nous utilisons une carte leaflet comme outil principal d’interaction
@@ -221,14 +222,14 @@
     <p>L’outil principal d’exploration quand à lui est Mapillary, avec
       lequel on affiche la streetview qui sert de d’indice au joueur pour se
       repérer.</p>
-    <h2 id="le-back-end-php-et-sql">Le back-end: PHP et SQL</h2>
+    <h3 id="le-back-end-php-et-sql">Le back-end: PHP et SQL</h3>
     <p>Notre back-end est structuré en deux couches, une couche base de
       données qui stocke toutes les informations requises par le jeu; et une
       couche API qui cache au front-end le fonctionnement du back-end et
       vice-versa, tout en leur permettant de communiquer entre eux.</p>
-    <h1 id="notre-processus-de-création">Notre processus de création</h1>
-    <h2 id="création-dun-cahier-des-charges">Création d’un cahier des
-      charges</h2>
+    <h2 id="notre-processus-de-création">Notre processus de création</h2>
+    <h3 id="création-dun-cahier-des-charges">Création d’un cahier des
+      charges</h3>
     <p>La première chose que nous avons faite a été de chercher un idée à
       mettre en place. Après avoir choisi de reproduire Géogussr nous nous
       sommes penchés sur le fonctionalités basiques que nous pensions être
@@ -239,8 +240,8 @@
       <li>la capacité pour le client de jouer/créer des parcours.</li>
       <li>la capacité de s’inscrire et de se connecter pour les clients.</li>
     </ul>
-    <h2 id="la-conception-de-la-base-de-données">La conception de la base de
-      données</h2>
+    <h3 id="la-conception-de-la-base-de-données">La conception de la base de
+      données</h3>
     <p>Après nous être décidés sur les tâches que nous devions accomplir,
       nous avons réfléchi à la structure de données qui soit la plus flexible
       possible et qui nous permette de remplir le cahier des charges que nous
@@ -276,23 +277,23 @@
         addClient, ou addComposition, qui permettent de cacher au PHP le
         fonctionnement exact de la base de données.</li>
     </ul>
-    <h2 id="création-de-la-spécification-de-notre-api">Création de la
-      spécification de notre API</h2>
+    <h3 id="création-de-la-spécification-de-notre-api">Création de la
+      spécification de notre API</h3>
     <p>Après avoir effectué la conception de la base de données, nous nous
       sommes mis d’accord sur une “spécification d’API”, avec plusieurs
       fichiers JSON qui étaient utilisés à la place du lien api final pour le
       front end, et qui servaient d’exemples de résultat à finir pour le
       back-end.</p>
-    <h2 id="implémentation-en-parallèle-du-front-et-back-end">Implémentation
-      en parallèle du front et back end</h2>
+    <h3 id="implémentation-en-parallèle-du-front-et-back-end">Implémentation
+      en parallèle du front et back end</h3>
     <p>Grace aux fichiers JSON qui servaient de spécifications, nous avons
       pu développer le front-end et le back-end en parallèle, avant même que
       les vraies implémentations soient finies. Nous avons ensuite juste
       remplacé le lien des fichiers JSON avec les liens vers les fichiers php
       api dans nos requêtes JS.</p>
-    <h1 id="bilan">Bilan</h1>
-    <h2 id="nos-difficultés-et-ce-que-lon-a-appris">Nos difficultés et ce
-      que l’on a appris</h2>
+    <h2 id="bilan">Bilan</h2>
+    <h3 id="nos-difficultés-et-ce-que-lon-a-appris">Nos difficultés et ce
+      que l’on a appris</h3>
     <p>Les plus grandes difficultés que l’on a eue lors de ce projet ont été
       l’utilisation de PHP et de Mapillary.</p>
     <p>Php étant un langage que nous avons récemment appris contrairement à
@@ -312,7 +313,7 @@
       avant la présentation, ce qui a rendu les exemples de la documentation
       et notre application non fonctionnelle. Cela nous a donc forcé à réparer
       ce changement à la dernière minute.</p>
-    <h2 id="le-résultat-final">Le résultat final</h2>
+    <h3 id="le-résultat-final">Le résultat final</h3>
     <p>Nous sommes très satisfaits du résultat final, et de ce que l’on a
       appris avec ce projet. Nous avons implémenté toutes les fonctionnalités
       que nous souhaitions, et obtenu des compétences versatiles comme la

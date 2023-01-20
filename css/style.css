@@ -12,7 +12,7 @@
   font-family: 'raleway';
 }
 
-body {
+body, a {
   color: var(--clr-secondary-0);
   background-color: var(--clr-primary-1000);
   overflow-x: hidden;
@@ -40,11 +40,16 @@ img:not([src^=".svg"], .full-color) {
 
 h1 {
   font-size: 2.5rem;
+  text-align: center;
   text-decoration: underline;
 }
 
 h2, h2 * {
   font-size: 2rem;
+}
+
+h3, h3 * {
+  font-size: 1.5rem;
 }
 
 ul {
