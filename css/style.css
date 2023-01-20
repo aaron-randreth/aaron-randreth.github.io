@@ -111,6 +111,10 @@ ul {
   background-color: var(--clr-secondary-100);
 }
 
+.contain {
+  object-fit: contain;
+}
+
 .section-title {
   text-align: center;
   text-transform: capitalize;
@@ -193,6 +197,10 @@ main.article * {
 
 .project-item .button {
   width: 100%;
+}
+
+.project-cover {
+  background-color: black;
 }
 
 .project-cover img{
@@ -353,4 +361,8 @@ main.article * {
 #text-404 {
   max-width: 40rem;
   text-align: center;
+}
+
+.white-bg {
+  background-color: white;
 }

@@ -24,7 +24,6 @@
       <div>
         <h2 class="section-title">Artiste digital <span class="highlight">/</span> Vidéaste</h2>
         <p class="section-description">
-          Deux de mes passe-temps favoris sont la création de scènes 3D 
         </p>
       </div>
     </article>
