@@ -31,7 +31,7 @@
   #include "partials/navbar.html"
 
   <main class="about-container flex-group article">
-    <h1>Rapport de conception: Géogussr</h1>
+    <h1>Rapport de conception: GéoCherheur</h1>
     <nav id="TOC" role="doc-toc">
       <ul>
         <li><a href="#notre-concept" id="toc-notre-concept">Notre
