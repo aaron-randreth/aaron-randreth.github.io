@@ -12,10 +12,14 @@
   font-family: 'raleway';
 }
 
-body, a {
+body {
   color: var(--clr-secondary-0);
   background-color: var(--clr-primary-1000);
   overflow-x: hidden;
+}
+
+a {
+  color: var(--clr-secondary-0);
 }
 
 main {
