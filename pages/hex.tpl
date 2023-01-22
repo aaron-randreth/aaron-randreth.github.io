@@ -2,7 +2,7 @@
 <html lang="fr">
 
 #define TITLE Jeu Hex
-#define DESC    Quoi de mieux que les classiques du Jeu Vidéo pour passer du bon temps ? \
+#define DESC Quoi de mieux que les classiques du Jeu Vidéo pour passer du bon temps ? \
 Nous avons reproduit de nombreux jeux iconiques comme le Démineur, Hex, et 6-qui prends. Tout cela \
 pour votre plus grand plaisir :)(et aussi pour nous entraîner à la programmation).
 
@@ -19,34 +19,30 @@ pour votre plus grand plaisir :)(et aussi pour nous entraîner à la programmati
 
     <nav id="TOC" role="doc-toc">
       <ul>
-        <li><a href="#projet-hex-du-groupe-203" id="toc-projet-hex-du-groupe-203">Projet hex du Groupe 203</a>
+        <li><a href="#résumé-de-notre-implémentation" id="toc-résumé-de-notre-implémentation">Résumé de notre
+            implémentation</a></li>
+        <li><a href="#notre-structure-de-projet" id="toc-notre-structure-de-projet">Notre structure de projet</a>
           <ul>
-            <li><a href="#résumé-de-notre-implémentation" id="toc-résumé-de-notre-implémentation">Résumé de notre
-                implémentation</a></li>
-            <li><a href="#notre-structure-de-projet" id="toc-notre-structure-de-projet">Notre structure de projet</a>
-              <ul>
-                <li><a href="#quelques-points-à-noter" id="toc-quelques-points-à-noter">Quelques points à noter</a></li>
-                <li><a href="#le-diagramme-uml" id="toc-le-diagramme-uml">le diagramme
-                    UML</a></li>
-              </ul>
-            </li>
-            <li><a href="#ce-que-lon-pourrais-rajouter" id="toc-ce-que-lon-pourrais-rajouter">Ce que l’on pourrais
-                rajouter</a></li>
-            <li><a href="#synthèse-de-nos-tests-unitaires" id="toc-synthèse-de-nos-tests-unitaires">Synthèse de nos
-                tests
-                unitaires</a></li>
-            <li><a href="#bilan-du-projet" id="toc-bilan-du-projet">Bilan du
-                projet</a>
-              <ul>
-                <li><a href="#nos-difficultés" id="toc-nos-difficultés">Nos
-                    difficultés</a></li>
-                <li><a href="#ce-que-le-projet-nous-a-appris" id="toc-ce-que-le-projet-nous-a-appris">Ce que le projet
-                    nous a
-                    appris</a></li>
-                <li><a href="#le-résultat-final" id="toc-le-résultat-final">Le résultat
-                    final</a></li>
-              </ul>
-            </li>
+            <li><a href="#quelques-points-à-noter" id="toc-quelques-points-à-noter">Quelques points à noter</a></li>
+            <li><a href="#le-diagramme-uml" id="toc-le-diagramme-uml">le diagramme
+                UML</a></li>
+          </ul>
+        </li>
+        <li><a href="#ce-que-lon-pourrais-rajouter" id="toc-ce-que-lon-pourrais-rajouter">Ce que l’on pourrais
+            rajouter</a></li>
+        <li><a href="#synthèse-de-nos-tests-unitaires" id="toc-synthèse-de-nos-tests-unitaires">Synthèse de nos
+            tests
+            unitaires</a></li>
+        <li><a href="#bilan-du-projet" id="toc-bilan-du-projet">Bilan du
+            projet</a>
+          <ul>
+            <li><a href="#nos-difficultés" id="toc-nos-difficultés">Nos
+                difficultés</a></li>
+            <li><a href="#ce-que-le-projet-nous-a-appris" id="toc-ce-que-le-projet-nous-a-appris">Ce que le projet
+                nous a
+                appris</a></li>
+            <li><a href="#le-résultat-final" id="toc-le-résultat-final">Le résultat
+                final</a></li>
           </ul>
         </li>
       </ul>
@@ -144,54 +140,54 @@ pour votre plus grand plaisir :)(et aussi pour nous entraîner à la programmati
       Cependant, à cause de la différence de comportement entre le joueur
       humain qui a besoin d’un dialogue de l’IHM et le joueur robot qui n’en a
       pas besoin, nous avons finit par avoir des dépendances textuelles
-    <!--   néfastes.: comme illustré ci-dessous:</p> -->
-    <!-- <div class="sourceCode" id="cb1"> -->
-    <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" -->
-    <!--           tabindex="-1"></a></span> -->
-    <!--       <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span -->
-    <!--           class="op">(</span>j1<span class="op">.</span><span class="fu">getClass</span><span -->
-    <!--           class="op">().</span><span class="fu">getName</span><span class="op">().</span><span -->
-    <!--           class="fu">equals</span><span class="op">(</span><span -->
-    <!--           class="st">&quot;joueur.JoueurHumain&quot;</span><span class="op">))</span> <span -->
-    <!--           class="op">{</span></span> -->
-    <!--       <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span> -->
-    <!--       <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="bu">System</span><span -->
-    <!--           class="op">.</span><span class="fu">out</span><span class="op">.</span><span -->
-    <!--           class="fu">println</span><span class="op">(</span>j1<span class="op">.</span><span -->
-    <!--           class="fu">getNom</span><span class="op">()</span> <span class="op">+</span> <span class="st">&quot; : -->
-    <!--           Saisir les coordonnées du pion à poser</span></span> -->
-    <!--       <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> sur le plateau <span -->
-    <!--           class="op">:</span><span class="st">&quot;);</span></span> -->
-    <!--       <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span> -->
-    <!--       <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a> <span class="bu">String</span> coord -->
-    <!--         <span class="op">=</span> sc<span class="op">.</span><span class="fu">next</span><span -->
-    <!--           class="op">();</span></span> -->
-    <!--       <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span> -->
-    <!--       <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a> j1<span class="op">.</span><span -->
-    <!--           class="fu">jouer</span><span class="op">(</span>coord<span class="op">,</span> plateau<span -->
-    <!--           class="op">);</span> <span class="op">}</span></span></code></pre> -->
-    <!-- </div> -->
-    <!-- <p>Pour régler cela nous avons rajouté une méthode dans l’interface -->
-    <!--   IJoueur:</p> -->
-    <!-- <div class="sourceCode" id="cb2"> -->
-    <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" -->
-    <!--           tabindex="-1"></a></span> -->
-    <!--       <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span -->
-    <!--           class="dt">boolean</span> <span class="fu">needs_input</span><span class="op">();</span></span></code> -->
-    <!--   </pre> -->
-    <!-- </div> -->
-    <!-- <p>qui nous permet de généraliser le code et d’éviter de rendre l’IHM -->
-    <!--   dépendant à une implémentation spécifique:</p> -->
-    <!-- <div class="sourceCode" id="cb3"> -->
-    <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" -->
-    <!--           tabindex="-1"></a> <span class="cf">if</span> <span class="op">(</span>j1<span class="op">.</span><span -->
-    <!--           class="fu">needs_input</span><span class="op">())</span></span> -->
-    <!--       <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="co">// saisie des -->
-    <!--           coordonées par le joeur</span></span> -->
-    <!--       <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span> -->
-    <!--       <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> j1<span class="op">.</span><span -->
-    <!--           class="fu">jouer</span><span class="op">()</span></span></code></pre> -->
-    <!-- </div> -->
+      <!--   néfastes.: comme illustré ci-dessous:</p> -->
+      <!-- <div class="sourceCode" id="cb1"> -->
+      <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" -->
+      <!--           tabindex="-1"></a></span> -->
+      <!--       <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span -->
+      <!--           class="op">(</span>j1<span class="op">.</span><span class="fu">getClass</span><span -->
+      <!--           class="op">().</span><span class="fu">getName</span><span class="op">().</span><span -->
+      <!--           class="fu">equals</span><span class="op">(</span><span -->
+      <!--           class="st">&quot;joueur.JoueurHumain&quot;</span><span class="op">))</span> <span -->
+      <!--           class="op">{</span></span> -->
+      <!--       <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span> -->
+      <!--       <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="bu">System</span><span -->
+      <!--           class="op">.</span><span class="fu">out</span><span class="op">.</span><span -->
+      <!--           class="fu">println</span><span class="op">(</span>j1<span class="op">.</span><span -->
+      <!--           class="fu">getNom</span><span class="op">()</span> <span class="op">+</span> <span class="st">&quot; : -->
+      <!--           Saisir les coordonnées du pion à poser</span></span> -->
+      <!--       <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> sur le plateau <span -->
+      <!--           class="op">:</span><span class="st">&quot;);</span></span> -->
+      <!--       <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span> -->
+      <!--       <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a> <span class="bu">String</span> coord -->
+      <!--         <span class="op">=</span> sc<span class="op">.</span><span class="fu">next</span><span -->
+      <!--           class="op">();</span></span> -->
+      <!--       <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span> -->
+      <!--       <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a> j1<span class="op">.</span><span -->
+      <!--           class="fu">jouer</span><span class="op">(</span>coord<span class="op">,</span> plateau<span -->
+      <!--           class="op">);</span> <span class="op">}</span></span></code></pre> -->
+      <!-- </div> -->
+      <!-- <p>Pour régler cela nous avons rajouté une méthode dans l’interface -->
+      <!--   IJoueur:</p> -->
+      <!-- <div class="sourceCode" id="cb2"> -->
+      <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" -->
+      <!--           tabindex="-1"></a></span> -->
+      <!--       <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span -->
+      <!--           class="dt">boolean</span> <span class="fu">needs_input</span><span class="op">();</span></span></code> -->
+      <!--   </pre> -->
+      <!-- </div> -->
+      <!-- <p>qui nous permet de généraliser le code et d’éviter de rendre l’IHM -->
+      <!--   dépendant à une implémentation spécifique:</p> -->
+      <!-- <div class="sourceCode" id="cb3"> -->
+      <!--   <pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" -->
+      <!--           tabindex="-1"></a> <span class="cf">if</span> <span class="op">(</span>j1<span class="op">.</span><span -->
+      <!--           class="fu">needs_input</span><span class="op">())</span></span> -->
+      <!--       <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> <span class="co">// saisie des -->
+      <!--           coordonées par le joeur</span></span> -->
+      <!--       <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span> -->
+      <!--       <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> j1<span class="op">.</span><span -->
+      <!--           class="fu">jouer</span><span class="op">()</span></span></code></pre> -->
+      <!-- </div> -->
     <p>Un aspect que nous n’avons pas réussi à résoudre a été les
       dépendances lié aux fabriques. Même si l’IHM n’est pas du tout
       dépendante des différentes classes Joueurs, et Plateau, elle est
