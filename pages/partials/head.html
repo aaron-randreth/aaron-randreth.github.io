@@ -1,18 +1,18 @@
 <head>
-  <title>
-    #ifdef TITLE
-      TITLE | 
-    #endif
-    Aaron Randreth
-  </title>
+  #ifdef TITLE
+    <title>TITLE | Aaron Randreth</title>
+  #else
+    <title>TITLE | Aaron Randreth</title>
+  #endif
+
   <meta name="author" content="Aaron Randreth">
   <meta name="description" 
     #ifndef DESC
       content="Le site personnel de Aaron Randreth, un étudiant en programmation informatique, un artiste audiovisuel, et un écrivain."
     #else 
-      content="DESC"
+      content="DESC" 
     #endif
-    >
+  >
   <meta name="keywords" content="Tech, Art, Dev">
 
   <meta charset="UTF-8">
@@ -25,12 +25,12 @@
   <link href="css/navbar.css" rel="stylesheet">
 
   #ifndef NO_FOOTER
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
   #endif
 
   #ifndef NO_NAV_JS
-    <script src="js/navbar.js"></script>
+  <script src="js/navbar.js"></script>
   #endif
 
 </head>
