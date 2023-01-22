@@ -3,8 +3,8 @@
 
 #define TITLE Jeu Hex
 #define DESC    Quoi de mieux que les classiques du Jeu Vidéo pour passer du bon temps ? \
-            Nous avons reproduit de nombreux jeux iconiques comme le Démineur, Hex, et 6-qui prends. Tout cela \
-            pour votre plus grand plaisir :)(et aussi pour nous entraîner à la programmation).
+Nous avons reproduit de nombreux jeux iconiques comme le Démineur, Hex, et 6-qui prends. Tout cela \
+pour votre plus grand plaisir :)(et aussi pour nous entraîner à la programmation).
 
 #include "partials/head.html"
 

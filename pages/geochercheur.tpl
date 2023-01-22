@@ -2,9 +2,10 @@
 <html lang="fr">
 
 #define TITLE GéoCherheur
+
 #define DESC GéoChercheur est une récréation du fameux jeu en ligne Geoguessr. Cette \
-            version est gratuite, open-source, et entièrement basée sur les technologies de l'Open Data. Vous \
-            n'avez plus qu'à sortir vos outils de détective, à vous de jouer !
+version est gratuite, open-source, et entièrement basée sur les technologies de l'Open Data. Vous \
+n'avez plus qu'à sortir vos outils de détective, à vous de jouer !
 
 #include "partials/head.html"
 
