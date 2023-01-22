@@ -280,7 +280,10 @@ main.article * {
 .xp-article {
   align-self: flex-start;
   position: relative;
+}
 
+.xp-article .section-description {
+  text-align: center;
 }
 
 .xp-article:nth-child(3n) .section-title {
@@ -316,6 +319,7 @@ main.article * {
 
 .xp-article:nth-child(even) {
   align-self: flex-end;
+  text-align: right;
 }
 
 .xp-container {
