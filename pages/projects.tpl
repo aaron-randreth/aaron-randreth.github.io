@@ -84,7 +84,7 @@
 
     </section>
 
-    < !-- <hr> -->
+    <!-- <hr> -->
 
     </main>
   #include "partials/footer.html"
