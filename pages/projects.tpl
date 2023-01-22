@@ -37,7 +37,7 @@
             version est gratuite, open-source, et entièrement basée sur les technologies de l'Open Data. <br><br> Vous
             n'avez plus qu'à sortir vos outils de détective, à vous de jouer !
           </p>
-          <a class="button" href="geochercheur.html">Cliquez moi pour en savoir plus !</a>
+          <a class="button" href="geochercheur">Cliquez moi pour en savoir plus !</a>
         </div>
       </article>
 
@@ -58,7 +58,8 @@
             Nous avons reproduit de nombreux jeux iconiques comme <b>le Démineur, Hex, et 6-qui prends</b>. Tout cela
             pour votre plus grand plaisir <span class="highlight">:)</span> (et aussi pour nous entraîner à la programmation).
           </p>
-          <a class="button" href="simple_games.html">Cliquez moi pour en savoir plus !</a>
+          <!-- <a class="button" href="simple_games.html">Cliquez moi pour en savoir plus !</a> -->
+          <a class="button" href="hex.html">Cliquez moi pour en savoir plus !</a>
         </div>
       </article>
 
@@ -78,7 +79,7 @@
             Fatigué de ne plus pouvoir lire le dernier chapitre de votre webnovel, juuuste au moment où ça devenait intéressant ?<br><br>
             RoyalScrapper vous permet de sauvegarder une copie de toute une fiction ou d'un chapitre, du site <a href="https://www.royalroad.com">RoyalRoad</a>.
           </p>
-          <a class="button" href="royal_scrapper.html">Cliquez moi pour en savoir plus !</a>
+          <!-- <a class="button" href="royal_scrapper.html">Cliquez moi pour en savoir plus !</a> -->
         </div>
       </article>
 
