@@ -31,7 +31,7 @@
       <h2 class="section-title flex-full-line">Mes différents langages <span class="highlight">tech</span></h2>
       <div class="flex-full-line flex-center">
         <p class="section-description">
-          Les différents langages que je métrise.
+          Les différents langages que je maîtrise.
         </p>
       </div>
 
@@ -47,7 +47,7 @@
           <ul class="tags highlight">
             <li>languages system</li>
           </ul>
-          <h3 class="project-title">Les languages de programmation</h3>
+          <h3 class="project-title">Les langages de programmation</h3>
           <p class="project-description">
           <ul>
             <li>Rust</li>
@@ -71,7 +71,7 @@
             <li>tech</li>
             <li>jeux</li>
           </ul>
-          <h3 class="project-title">Les languages du dévelopement web</h3>
+          <h3 class="project-title">Les langages du développement web</h3>
           <p class="project-description">
           <ul>
             <li>Html/Css/Js</li>
