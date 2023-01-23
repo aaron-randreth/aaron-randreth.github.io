@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
-  --clr-primary-1000: #010b13;
+  /* --clr-primary-1000: #010b13; */
+  --clr-primary-1000: #03192b;
   --clr-primary-900: #100c08;
   --clr-secondary-500: #6B6A69;
   --clr-secondary-100: #EDB0DD;
