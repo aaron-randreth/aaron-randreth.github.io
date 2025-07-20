@@ -235,6 +235,7 @@ i.bi::after {
 
 .metadata {
   display: flex;
+  flex-wrap: wrap;
   gap: 2em;
   padding: 0;
 
@@ -399,4 +400,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  font-style: italic;
 }

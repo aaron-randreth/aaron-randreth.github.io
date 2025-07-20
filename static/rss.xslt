@@ -21,27 +21,23 @@
 </nav>
 
 <main>
+<section>
     <h1>
         <!-- <xsl:value-of select="/rss/channel/title"/> -->
         Feed for Aaron's blog. <i class="bi bi-rss-fill"></i>
     </h1>
-    <p>
-        <xsl:value-of select="/rss/channel/description"/>
-    </p>
 
     <p>This is the RSS <a href="https://www.rss.style/what-is-a-feed.html">news feed</a> for my blog.
-    It is meant for <a href="https://www.rss.style/newsreaders.html">news readers</a>, not humans.
-    Please copy-and-paste the URL into your news reader ^^
-    </p>
+    It is meant for <a href="https://www.rss.style/newsreaders.html">news readers</a>, not humans. 
+    If you do not have one yet, I personnaly use <a href="https://github.com/spacecowboy/Feeder">Feeder</a>, a KISS rss reader for android.</p>
+</section>
 
-    <p>
-        <pre>
-            <code id="feedurl"><xsl:value-of select="/rss/channel/atom:link/@href"/></code>
-            <button class="clipboard" data-clipboard-target="#feedurl">Copy to clipboard</button>
-        </pre>
-    </p>
-
-    <p>I recommend <a href="https://github.com/spacecowboy/Feeder">Feeder</a>, a KISS reader for android.</p>
+<p> To subscribe, please copy-and-paste the URL into your news reader ^^
+    <pre>
+        <code id="feedurl"><xsl:value-of select="/rss/channel/atom:link/@href"/></code>
+        <button class="clipboard" data-clipboard-target="#feedurl">Copy to clipboard</button>
+    </pre>
+</p>
 
 <section>
 <h2>RSS Entries</h2>

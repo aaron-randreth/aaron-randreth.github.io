@@ -2,7 +2,7 @@
 base_url = "https://aaron-randreth.com"
 author = "Aaron S. Randreth | blog@aaron-randreth.com"
 title = "Aaron S. Randreth's Blog"
-description = "My little piece of the internet."
+description = "Aaron's corner of the internet."
 default_language = "en"
 
 # Whether to automatically compile all Sass files in the sass directory
