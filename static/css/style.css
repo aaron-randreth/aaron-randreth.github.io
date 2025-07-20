@@ -388,6 +388,7 @@ hr {
   padding: 1em;
   border-radius: 8px;
   background: var( --tr-alt-bg-color );
+  font-style: italic;
 
   > p {
     margin-top: 0;
@@ -396,9 +397,28 @@ hr {
   margin-bottom: 1em;
 }
 
+#author-note-logo::after {
+  content: ' ';
+}
+
 audio {
   background: var( --th-bg-color );
   border-radius: 8px;
+}
+
+#back-btn {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background: var( --bg-color );
+
+  padding: 1ch;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*
@@ -417,10 +437,3 @@ audio {
   width: 10em;
   border-radius: 12px;
 }
-
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-

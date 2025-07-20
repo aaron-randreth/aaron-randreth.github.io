@@ -3,7 +3,7 @@
 {% block content %}
 
 <h1 class="title">
-  {{ section.title }}
+  {{ section.title | title | trim_end }}
 </h1>
 
 <ul class="card-list">
@@ -12,7 +12,7 @@
   {% for page in section.pages %}
   <li>
     <article class="post-card">
-      <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a> <i class="bi bi-box-arrow-up-right"></i></h2>
+      <h2><a href="{{ page.permalink | safe }}">{{ page.title | title | trim_end }}</a> <i class="bi bi-box-arrow-up-right"></i></h2>
       <ul class="metadata">
       {% if page.extra["type"] == "text" %}
         <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes read</li>

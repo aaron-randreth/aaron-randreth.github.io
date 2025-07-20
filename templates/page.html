@@ -11,6 +11,17 @@
   <li><i class="bi bi-pencil"></i>{{ page.date | date(format="%a, %d %b %Y") }}</li>
   <li><i class="bi bi-feather"></i> {{ page.authors | join( sep=", " ) }} </li>
 </ul>
+
 {{ page.content | safe }}
+
+<style>
+
+
+</style>
+<nav id="back-btn">
+  {% set parent = get_section(path=page.ancestors[1]) %}
+  <i class="bi bi-arrow-left"><a href="{{ parent.permalink }}">Back</a></i>
+</nav>
+
 {% endblock content %}
 

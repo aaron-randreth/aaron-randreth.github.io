@@ -1,6 +1,7 @@
 <aside id="author-note">
 <p>
-<i id="author-note-logo" class="bi bi-postcard-heart-fill">{% block type %}{% endblock type %}</i>
+<i id="author-note-logo" class="bi bi-postcard-heart-fill"></i>
+{% block type %}{% endblock type %}
 </p>
 {{ body | markdown(inline=false) | safe}}
 </aside>
