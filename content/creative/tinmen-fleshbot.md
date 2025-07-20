@@ -32,7 +32,8 @@ The detective snuggled tighter in his wool coat -- no fancy `Warmth and
 Comfort©` suits for the likes of him. He cursed one last time his broken
 snowmobile, before continuing his walk toward the factory. He made a crunch with
 each step of his heavy boots, just loud enough to be heard above the howling of
-the wind. <!--more-->
+the wind.
+<!--more-->
 
 ---
 
