@@ -384,7 +384,7 @@ hr {
   font-style: italic;
 }
 
-#afterword {
+#author-note {
   padding: 1em;
   border-radius: 8px;
   background: var( --tr-alt-bg-color );
@@ -392,6 +392,13 @@ hr {
   > p {
     margin-top: 0;
   }
+
+  margin-bottom: 1em;
+}
+
+audio {
+  background: var( --th-bg-color );
+  border-radius: 8px;
 }
 
 /*

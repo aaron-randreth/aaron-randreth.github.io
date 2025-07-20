@@ -5,7 +5,9 @@
   {{ page.title }}
 </h1>
 <ul class="metadata">
-  <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes</li>
+  {% if page.extra["type"] == "text" %}
+    <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes</li>
+  {% endif %}
   <li><i class="bi bi-pencil"></i>{{ page.date | date(format="%a, %d %b %Y") }}</li>
   <li><i class="bi bi-feather"></i> {{ page.authors | join( sep=", " ) }} </li>
 </ul>

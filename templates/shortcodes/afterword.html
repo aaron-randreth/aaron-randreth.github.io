@@ -1,4 +1,2 @@
-<aside id="afterword">
-  <p><i id="afterword-logo" class="bi bi-postcard-heart-fill"> Afterword</i></p>
-  {{ body | markdown(inline=false) | safe}}
-</aside>
+{% extends "shortcodes/author-note.html" %}
+{% block type %}Afterword{% endblock type %}

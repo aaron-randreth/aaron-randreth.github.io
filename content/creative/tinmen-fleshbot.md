@@ -10,6 +10,10 @@ authors = [
 
 date = "2023-07-03"
 
+[extra]
+
+type = "text"
+
 abstract = """
 Goes toward a factory -> smile mission -> no news was heard from the factory ->
 new experimental flesh robots have taken control of the bio-implents of the

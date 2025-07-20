@@ -14,13 +14,19 @@
     <article class="post-card">
       <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a> <i class="bi bi-box-arrow-up-right"></i></h2>
       <ul class="metadata">
+      {% if page.extra["type"] == "text" %}
         <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes read</li>
+        {% elif page.extra["type"] == "audio" %}
+        <li><i class="bi bi-file-earmark-music-fill"></i> audio file</li>
+      {% endif %}
         <li><i class="bi bi-pencil"></i>{{ page.date }}</li>
       </ul>
-      {{ page.summary | safe }}
-      <a href="{{ page.permalink }}#continue-reading">Continue Reading</a>
+      {% if page.summary %}
+        {{ page.summary | safe }}
+        <a href="{{ page.permalink }}#continue-reading">Continue Reading</a>
+      {% endif %}
     </article>
   </li>
   {% endfor %}
 </ul>
-{% endblock content %}
+{% endblock content %}pe
