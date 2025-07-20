@@ -2,7 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Aaron S. Randreth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal blog of Aaron S. Randreth - creative writing, technical posts, and more">
+  <meta name="author" content="Aaron S. Randreth">
+
+  <title>{% if page.title %}{{ page.title }} - {% endif %}Aaron S. Randreth</title>
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Aaron S. Randreth{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Personal blog of Aaron S. Randreth{% endif %}">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#ffb2db">
 
   <link rel="stylesheet" href="/css/style.css"/>
   <link rel="icon" type="image/png" href="/favicon.png">

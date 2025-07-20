@@ -394,3 +394,9 @@ hr {
   width: 10em;
   border-radius: 12px;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
