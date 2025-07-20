@@ -379,6 +379,21 @@ hr {
   border-top: 2px solid grey;
 }
 
+.subtitle {
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+#afterword {
+  padding: 1em;
+  border-radius: 8px;
+  background: var( --tr-alt-bg-color );
+
+  > p {
+    margin-top: 0;
+  }
+}
+
 /*
  * Index
  */
@@ -402,7 +417,3 @@ footer {
   justify-content: space-evenly;
 }
 
-.subtitle {
-  font-size: 1.25em;
-  font-style: italic;
-}
