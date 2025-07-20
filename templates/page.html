@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ page.title }}
+</h1>
+<ul class="metadata">
+  <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes</li>
+  <li><i class="bi bi-pencil"></i>{{ page.date | date(format="%a, %d %b %Y") }}</li>
+  <li><i class="bi bi-journal-text"></i>{{ page.word_count }} words</li>
+</ul>
+{{ page.content | safe }}
+{% endblock content %}
+

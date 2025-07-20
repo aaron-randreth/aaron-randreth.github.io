@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/rss.xslt" type="text/xsl"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title></title>
+      <link>https://blog.aaron-randreth.com</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://blog.aaron-randreth.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Tinmen and flesh robots
+</title>
+          <pubDate>2023-07-08</pubDate>
+          <author>Aaron S. Randreth | blog@aaron-randreth.com</author>
+          <link>https://blog.aaron-randreth.com/creative/tinman-fleshbot/</link>
+          <guid>https://blog.aaron-randreth.com/creative/tinman-fleshbot/</guid>
+          <description xml:base="https://blog.aaron-randreth.com/creative/tinman-fleshbot/">&lt;p&gt;A puff of dark yellow smoke slowly left a pair of cracked and shivering lips.
+For the second time this morning, Agent M82 looked with a scowl at his branded
+&lt;code&gt;JoyPuffs©&lt;&#x2F;code&gt; and wondered why he had even bought the damn thing. He was freezing,
+and a few puffs of a cheap cig would have soothed him wonderfully, but of course
+an agent of Smile couldn&#x27;t be caught with something as brand-unfriendly as that.&lt;&#x2F;p&gt;
+&lt;p&gt;The detective snuggled tighter in his wool coat -- no fancy &lt;code&gt;Warmth and Confort©&lt;&#x2F;code&gt; suits for the likes of him -- and continued marching on toward the
+factory.&lt;&#x2F;p&gt;
+&lt;p&gt;He made a crunch with each step of his heavy boots, just loud enough to
+be heard above the howling of the wind.&lt;&#x2F;p&gt;</description>
+      </item>
+    </channel>
+</rss>

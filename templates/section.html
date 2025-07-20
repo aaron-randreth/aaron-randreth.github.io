@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<ul class="card-list">
+  <!-- If you are using pagination, section.pages will be empty.
+       You need to use the paginator object -->  
+  {% for page in section.pages %}
+  <li>
+    <article class="post-card">
+      <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a> <i class="bi bi-box-arrow-up-right"></i></h2>
+      <ul class="metadata">
+        <li><i class="bi bi-clock"></i>{{ page.reading_time }} minutes read</li>
+        <li><i class="bi bi-pencil"></i>{{ page.date }}</li>
+      </ul>
+      {{ page.summary | safe }}
+      <a href="{{ page.permalink }}#continue-reading">Continue Reading</a>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}

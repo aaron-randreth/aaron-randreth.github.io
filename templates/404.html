@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  404 - Page not found.
+</h1>
+<style>
+#sad {
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  #sad {
+    color: var( --accent-color );
+  }
+}
+</style>
+<p id="sad">:(</p>
+{% endblock content %}

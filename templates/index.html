@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="headshot">
+  {% set img = resize_image(path="img/sunglasses.jpg", height=160, width=160, op="scale") %}
+  <img src="{{ img.url }}"/>
+</div>
+
+<h1 class="title">
+  Aaron S. Randreth
+</h1>
+
+<article>
+<h2>Categories</h2>
+<ul id="sections">
+{% for section_path in section.subsections %}
+{% set section = get_section(path=section_path) %}
+  {% if ( section.pages | length >= 1 ) %}
+    <li><a href="{{ section.permalink }}">{{ section.title}}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+<article>
+
+<article>
+<h2>Recent posts</h2>
+<ul>
+{% for section_path in section.subsections %}
+  {% set section = get_section(path=section_path) %}
+  {% if ( section.pages | length >= 1 ) %}
+    {% set page = section.pages[0] %}
+    <li>
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <span class="inline-metadata"><i class="bi bi-calendar-week-fill"></i>{{ page.date }}</span>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+</article>
+
+{% endblock content %}
+
