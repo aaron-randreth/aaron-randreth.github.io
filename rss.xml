@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/rss.xslt" type="text/xsl"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Aaron S. Randreth&#x27;s Blog</title>
+      <link>https://aaron-randreth.com</link>
+      <description>Aaron&#x27;s corner of the internet.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://aaron-randreth.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 25 Jul 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Fix SSL Certificate Issues in Corporate Linux Environment.
+</title>
+          <pubDate>2025-07-25</pubDate>
+          <author>Aaron RANDRETH</author>
+          <link>https://aaron-randreth.com/blog/configure-corporate-ca/</link>
+          <guid>https://aaron-randreth.com/blog/configure-corporate-ca/</guid>
+          <description xml:base="https://aaron-randreth.com/blog/configure-corporate-ca/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;While using a Virtual Machine (VM) on your company laptop, you might have encountered unexplained SSL certificate errors and big red warnings on your favorite browser inside this VM. If your network works perfectly fine outside your VM, then you might be missing the correct certificates.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[I]&lt;&#x2F;span&gt;&lt;span&gt; localhost@aaron &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span&gt;60&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; curl https:&#x2F;&#x2F;self-signed.badssl.com&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl:&lt;&#x2F;span&gt;&lt;span&gt; (60) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SSL&lt;&#x2F;span&gt;&lt;span&gt; certificate problem: self-signed certificate
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;More&lt;&#x2F;span&gt;&lt;span&gt; details here: https:&#x2F;&#x2F;curl.se&#x2F;docs&#x2F;sslcerts.html
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span&gt; failed to verify the legitimacy of the server and therefore could not
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;establish&lt;&#x2F;span&gt;&lt;span&gt; a secure connection to it. To learn more about this situation and
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;how&lt;&#x2F;span&gt;&lt;span&gt; to fix it, please visit the webpage mentioned above.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
+      </item>
+      <item>
+          <title>Tin Men and Flesh Robots
+</title>
+          <pubDate>2023-07-03</pubDate>
+          <author>Raphaël Couarraze</author>
+          <link>https://aaron-randreth.com/creative/tinmen-fleshbot/</link>
+          <guid>https://aaron-randreth.com/creative/tinmen-fleshbot/</guid>
+          <description xml:base="https://aaron-randreth.com/creative/tinmen-fleshbot/">&lt;p&gt;A puff of dark yellow smoke slowly left a pair of cracked and shivering lips.
+For the second time this morning, Agent M82 looked with a scowl at his branded
+&lt;code&gt;JoyPuffs©&lt;&#x2F;code&gt; and wondered why he had even bought the damn thing. He was freezing,
+and a few puffs of a cheap cig would have soothed him wonderfully, but of course
+an agent of SMILE couldn’t be caught with something as brand-unfriendly as that.
+The detective snuggled tighter in his wool coat – no fancy &lt;code&gt;Warmth and Comfort©&lt;&#x2F;code&gt; suits for the likes of him. He cursed one last time his broken
+snowmobile, before continuing his walk toward the factory. He made a crunch with
+each step of his heavy boots, just loud enough to be heard above the howling of
+the wind.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Creepy, Chilly, Angelic, and Somber</title>
+          <pubDate>2023-03-01</pubDate>
+          <author>Aaron Randreth</author>
+          <link>https://aaron-randreth.com/creative/creepy-chilly-somber-and-angelic/</link>
+          <guid>https://aaron-randreth.com/creative/creepy-chilly-somber-and-angelic/</guid>
+          <description xml:base="https://aaron-randreth.com/creative/creepy-chilly-somber-and-angelic/">&lt;p&gt;This is a short little sound bite that I made using &lt;a href=&quot;https:&#x2F;&#x2F;helio.fm&#x2F;&quot;&gt;Helio&lt;&#x2F;a&gt;.
+I think it doesn’t sound bad, I’d like to do more music in the future.&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+  &lt;source src=&quot;loop.mp3&quot; type=&quot;audio&#x2F;mp3&quot;&gt;
+  Your browser does not support the audio element.
+&lt;&#x2F;audio&gt; 
+</description>
+      </item>
+    </channel>
+</rss>

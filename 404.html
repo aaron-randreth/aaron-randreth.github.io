@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal blog of Aaron S. Randreth - creative writing, technical posts, and more">
+  <meta name="author" content="Aaron S. Randreth">
+
+  <title>Aaron S. Randreth</title>
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Aaron S. Randreth">
+  <meta property="og:description" content="Personal blog of Aaron S. Randreth">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#ffb2db">
+
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+
+  <!-- Enables auto discovery for rss -->
+  
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://aaron-randreth.com/rss.xml">
+  
+</head>
+
+<body>
+<nav>
+  <a id="logo" href="/">
+    <i class="bi bi-house-fill"></i></a>
+  <div id="search">
+    <input type="text" placeholder="Search..."></input>
+    <button disabled><i class="bi bi-search-heart-fill"></i></button>
+    <ul id="results">
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="section">
+    
+<h1 class="title">
+  404 - Page not found.
+</h1>
+<style>
+#sad {
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  #sad {
+    color: var( --accent-color );
+  }
+}
+</style>
+<p id="sad">:(</p>
+
+  </section>
+  <footer>
+    <p>Made using <a href="https://www.getzola.org">Zola</a>.<i class="bi bi-balloon-heart-fill"></i></p>
+    <p><a href="/rss.xml">Subscribe</a> with RSS. <i class="bi bi-rss-fill"></i></p>
+  </footer>
+</main>
+
+<script src="https://aaron-randreth.com/elasticlunr.min.js"></script>
+<script src="https://aaron-randreth.com/search_index.en.js"></script>
+<script>
+  const searchIndex = elasticlunr.Index.load(window.searchIndex);
+  const resultsContainer = document.getElementById('results');
+
+  document.getElementById('search').addEventListener('input', function(e) {
+    const results = searchIndex.search(
+      e.target.value, 
+      {expand: true, bool: "OR"}
+    );
+   resultsContainer.innerHTML = '';
+ 
+   results.forEach(result => {
+     const parentLi = document.createElement('li');
+     const link = document.createElement('a');
+     link.href = result.ref;
+     link.textContent = result.doc.title;
+     parentLi.appendChild(link);
+     resultsContainer.appendChild(parentLi);
+   });
+});
+</script>
+
+</body>
+
+</html>
+
