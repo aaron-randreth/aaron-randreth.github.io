@@ -15,7 +15,7 @@ type = "text"
 
 +++
 
-# Introduction 
+## Introduction 
 
 While using a Virtual Machine (VM) on your company laptop, you might have encountered unexplained SSL certificate errors and big red warnings on your favorite browser inside this VM. If your network works perfectly fine outside your VM, then you might be missing the correct certificates.
 
@@ -31,7 +31,7 @@ how to fix it, please visit the webpage mentioned above.
 
 <!--more-->
 
-# Why this might be happening 
+## Why this might be happening 
 
 > If you want to directly go to the solution, skip this section and move on to the next.
 
@@ -44,7 +44,7 @@ This VPN is always on and configured to be used for every network connection. As
 To fix this, we need to add our company's CAs to our machine.
 Other guides for this issue exist, but they assume you already have the certificates, or that you can easily get them from your IT department. My IT department however is pretty busy, and it's not the easiest to get a hold of them. I needed to find a solution that did not involve them at all.
 
-# Brief overview 
+## Brief overview 
 
 My host Windows computer only had Microsoft Edge, and I am using Firefox on my guest Debian VM, so that's what I will be using in this tutorial. If you have any other setup, you can rely on this overview and adapt it to your setup.
 
@@ -52,7 +52,7 @@ To fix our certificate problem, we will extract a certificate bundle from our ho
 
 We will also configure the browser on our guest system, as they sometimes ignore the system certificates.
 
-# Getting and adding the certificates 
+## Getting and adding the certificates 
 
 First, on your host machine:
 
@@ -91,6 +91,6 @@ wget --spider https://gitlab.freedesktop.org
 4. (Optional) By default, Firefox and other browsers do not use the system certificates, so some websites may still not work.
     To fix that for Firefox, go to `Settings > Privacy & Security > View Certificates > Import`. And import the trusted_certs.crt certificate.
 
-# Alternative Method 
+## Alternative Method 
 
 If you only want to get the certificates for a specific website, you can visit it on a machine that is correctly set up, and check in your browser by which certificate it was issued. You can then copy this directly to the certificates folder on the other machine, and update the certs.
