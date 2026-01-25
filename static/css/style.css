@@ -30,13 +30,13 @@
 
 html {
   height: 100%;
-  width: 100%;
+  max-width: 100vw;
 }
 
 body {
   min-height: 100svh;
-  width: 100%;
-  max-width: 100svw;
+  max-width: 100vw;
+  overflow-x: hidden;
   
   margin: 0;
   padding: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 main {
-  width: 100%;
+  max-width: 100vw;
   flex: 1;
   padding: 0 2em;
   display: flex;
@@ -61,8 +61,8 @@ main {
 
 main section {
   display: block;
-  width: max-content;
-  max-width: 80ch;
+  width: 80ch;
+  max-width: 100%;
 
   p {
     text-align: justify;
