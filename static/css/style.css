@@ -444,6 +444,10 @@ footer {
 /* Needed for the zola syntax hightlighting library.
 */
 
+pre.giallo {
+  overflow-x: scroll;
+}
+
 .giallo-l {
     display: inline-block;
     min-height: 1lh;
