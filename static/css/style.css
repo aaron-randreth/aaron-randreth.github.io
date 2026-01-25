@@ -28,14 +28,19 @@
   --accent-color: #ffb2db;
 }
 
-html, body {
-  width: 100%;
+html {
   height: 100%;
-  padding: 0;
-  margin: 0;
+  width: 100%;
 }
 
 body {
+  min-height: 100svh;
+  width: 100%;
+  max-width: 100svw;
+  
+  margin: 0;
+  padding: 0;
+  
   background-color: var( --bg-color );
 
   font-family: "JetBrains Mono", "monospace", "serif";
@@ -55,6 +60,7 @@ main {
 }
 
 main section {
+  display: block;
   width: max-content;
   max-width: 80ch;
 
@@ -296,8 +302,6 @@ blockquote {
   border-left: 4px solid var( --accent-color );
   margin-left: 1em;
   padding-left: 1em;
-
-
 }
 
 table, th, tr {
@@ -448,7 +452,7 @@ footer {
 */
 
 pre.giallo {
-  max-width: 70ch;
+  max-width: 75ch;
   overflow-x: scroll;
 }
 
