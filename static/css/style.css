@@ -241,6 +241,7 @@ i.bi::after {
 }
 
 .post-card {
+  min-width: 0;
   max-width: 100%;
   a {
   text-decoration: none;
