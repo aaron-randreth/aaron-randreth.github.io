@@ -454,7 +454,8 @@ footer {
 */
 
 pre.giallo {
-  width: 100%;
+  width: 80ch;
+  max-width: 100%;
   overflow-x: scroll;
 }
 
