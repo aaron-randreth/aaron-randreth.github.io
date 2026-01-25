@@ -26,18 +26,16 @@
   }
 
   --accent-color: #ffb2db;
-  height: 100dvh;
-  width: 100dvw;
 }
 
 html, body {
+  width: 100%;
+  height: 100%;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
   background-color: var( --bg-color );
 
   font-family: "JetBrains Mono", "monospace", "serif";
@@ -57,7 +55,7 @@ main {
 }
 
 main section {
-  width: min-content;
+  width: max-content;
   max-width: 80ch;
 
   p {
