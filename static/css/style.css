@@ -27,6 +27,7 @@
 
   --accent-color: #ffb2db;
   height: 100dvh;
+  width: 100dvw;
 }
 
 html, body {
@@ -56,8 +57,8 @@ main {
 }
 
 main section {
+  width: min-content;
   max-width: 80ch;
-  width: 100%;
 
   p {
     text-align: justify;
@@ -234,7 +235,7 @@ i.bi::after {
 }
 
 .post-card {
-  width: 100%;
+  max-width: 100%;
   a {
   text-decoration: none;
   }
