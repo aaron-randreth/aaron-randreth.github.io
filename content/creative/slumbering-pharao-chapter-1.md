@@ -1,6 +1,6 @@
 +++
 title = """
-Slumbering Pharaoh - Chapiter 1: Khafra's second dawn
+Slumbering Pharaoh - Chapter 1: Khafra's second dawn
 """
 
 authors = [
@@ -47,17 +47,17 @@ Ernest and her admired the landscape in silence.
 
 “Look at that”, she pointed. “There’s no water in the river anymore, I don’t know how we will make up for the jugs we lost in the walls”
 
-“Hi hi don’t worry little Harriet, I have more than one trick up my sleeve” and he revealed in one swooping motion an humming rectangular...thing ? She squinted her eyes at the thing and wondered how Ernest managed to hide an object the size of her head in his pockets, but more importantly “what does this do?”
+“Hi hi don’t worry little Harriet, I have more than one trick up my sleeve” and he revealed in one swooping motion an humming rectangular...thing ? She squinted her eyes at the thing and wondered how Ernest managed to hide an object the size of her head in his pockets, but more importantly “What does this do?”
 
-“This my dear is a magical artifact that makes drinkable water”
+“This my dear is a magical artifact that makes drinkable water.”
 
 “Why then did you have me carry all those jugs of water you senile monkey!” shouted the young woman before breaking into a coughing fit.
 
-“Now now you need to calm down before your condition worsen” said the self-proclaimed gentleman, placing a sympathetic hand on her back.
+“Now now, you need to calm down before your condition worsens”, said the self-proclaimed gentleman, placing a sympathetic hand on her back.
 
-“Obviously physical labour builds character —Harriet glared murderously— buuut this artifact isn’t perfect, there is a catch” he leaned in and whispered conspiratorially ” this condenses ambient mana into water and as you know—“
+“Obviously physical labour builds character" —Harriet glared murderously— "buuut this artifact isn’t perfect, there is a catch”. He leaned in and whispered conspiratorially, ”this condenses ambient mana into water and as you know—“
 
-“The Nil desert is a mana waste land so we cannot create water with this” completed Harriet.
+“The Nil desert is a mana waste land so we cannot create water with this”, completed Harriet.
 
 “Exactly”
 
@@ -85,13 +85,13 @@ While slashing away at the branches in a more jungle-y part of the downtown they
 
 *I sure hope it isn’t, I haven’t even gone out on my own.*
 
-In a logic defying vision, she saw a second sun rising from behind her. Its red hue so bright that the lazy noon sun disappear.
+In a logic defying vision, she saw a second sun rising, tts red hue so bright that the real lazy noon sun soon disappeared.
 
 The rumble intensified.
 
 Ernest and her crashed down.
 
-Now bruised and terrified for her life she still couldn’t help to think that this looked an awful lot like a beautiful sunset.
+While ruised and terrified for her life, she still couldn’t help but think that this looked an awful lot like a beautiful sunset.
 
 {% afterword() %}
 I wrote this in my first year of college, or a few months before the end of 
