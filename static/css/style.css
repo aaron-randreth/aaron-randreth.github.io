@@ -221,6 +221,7 @@ i.bi::after {
   padding: 0;
   display: grid;
   gap: 1em;
+  width: 100%;
 
   h2 {
     a {
@@ -232,10 +233,13 @@ i.bi::after {
   }
 }
 
-.post-card a {
+.post-card {
+  width: 100%;
+  a {
   text-decoration: none;
+  }
 }
-
+  
 .metadata {
   display: flex;
   flex-wrap: wrap;
