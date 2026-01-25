@@ -226,8 +226,7 @@ i.bi::after {
 .card-list {
   list-style: none;
   padding: 0;
-  display: grid;
-  gap: 1em;
+  display: block;
   width: 100%;
 
   h2 {
