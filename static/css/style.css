@@ -26,6 +26,7 @@
   }
 
   --accent-color: #ffb2db;
+  box-sizing: border-box;
 }
 
 html {
@@ -61,8 +62,9 @@ main {
 
 main section {
   display: block;
-  width: 80ch;
-  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 80ch;
 
   p {
     text-align: justify;
@@ -452,7 +454,7 @@ footer {
 */
 
 pre.giallo {
-  max-width: 75ch;
+  width: 100%;
   overflow-x: scroll;
 }
 
