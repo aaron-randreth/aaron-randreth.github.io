@@ -47,6 +47,7 @@ body {
 }
 
 main {
+  width: 100%;
   flex: 1;
   padding: 0 2em;
   display: flex;
@@ -449,6 +450,7 @@ footer {
 */
 
 pre.giallo {
+  max-width: 70ch;
   overflow-x: scroll;
 }
 
