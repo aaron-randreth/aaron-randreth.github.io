@@ -34,8 +34,7 @@ style = "inline"
 #theme = ""
 
 # 2. If you want light/dark themes, use the 2 fields below instead. See the syntax highlighting page for the possible choices.
-light_theme = "github-light"
-dark_theme = "github-dark"
+theme = "github-dark"
 
 [extra]
 
