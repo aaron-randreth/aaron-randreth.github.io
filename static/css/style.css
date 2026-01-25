@@ -27,6 +27,7 @@
 
   --accent-color: #ffb2db;
   height: 100dvh;
+  width: 100dvw;
 }
 
 html, body {
@@ -35,6 +36,7 @@ html, body {
 
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   background-color: var( --bg-color );
 
@@ -55,6 +57,7 @@ main {
 
 main section {
   max-width: 80ch;
+  width: 100%;
 
   p {
     text-align: justify;
