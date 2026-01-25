@@ -23,7 +23,7 @@ On the dawn of the seventieth millennia since he was embalmed The Pharaoh stirre
 
 <!--more-->
 
-~~~
+---
 
 **At the same time a dozen kilometres away.**
 
@@ -76,7 +76,8 @@ A sigh escaped her lips.
 “However you are here to learn, realising your behaviour and asking for forgiveness is a step forward. If you are to adventure like your father and I, you will need to learn to be pleasant at all time. To people you meet on your way, as one wrong word can get you lynched by a mob; but most importantly to your crew, for they will have your back day and night” a sombre look passed his face “ when you have great danger in front of you, the last thing you want is a knife in the back.”
 
 Harriet gulped and nodded.
-~~~
+
+---
 
 **Down in the ‘noodle soup’.**
 
